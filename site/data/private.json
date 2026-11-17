@@ -1,0 +1,1949 @@
+{
+ "generatedAt": "2026-11-17T22:25:37.392Z",
+ "source": "USAspending.gov API; NC Department of Commerce WARN summary list",
+ "fiscalYears": {
+  "completed": "FY2026",
+  "prior": "FY2025",
+  "current": "FY2027"
+ },
+ "contractors": [
+  {
+   "name": "Thalle Construction Co Inc",
+   "recipientId": "880ef35a-f087-3ed6-ac27-9d2211947165-C",
+   "uei": "RMVJU76MCN81",
+   "FY2026": 1921555765.33,
+   "FY2025": 285417976.97,
+   "FY2027ytd": null,
+   "growth": 5.732427248378866,
+   "source": "https://www.usaspending.gov/recipient/880ef35a-f087-3ed6-ac27-9d2211947165-C/latest"
+  },
+  {
+   "name": "Orano Federal Services LLC",
+   "recipientId": "672134e5-1420-82f2-0227-283f296d94c6-C",
+   "uei": "DLG7K4HPVT43",
+   "FY2026": 899781011.31,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/672134e5-1420-82f2-0227-283f296d94c6-C/latest"
+  },
+  {
+   "name": "Research Triangle Institute",
+   "recipientId": "8303ed9b-9fb4-3e90-ca81-50bbcf400948-C",
+   "uei": "JJHCMK4NT5N3",
+   "FY2026": 381873625.88,
+   "FY2025": 361544065.5,
+   "FY2027ytd": 15818428.21,
+   "growth": 0.05622982734313473,
+   "source": "https://www.usaspending.gov/recipient/8303ed9b-9fb4-3e90-ca81-50bbcf400948-C/latest"
+  },
+  {
+   "name": "Thalle - Bauer LLC",
+   "recipientId": "8d0e7c28-08e2-0e9e-a2c4-75de0102587c-C",
+   "uei": "PWHRCFCSRQ34",
+   "FY2026": 378960250,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/8d0e7c28-08e2-0e9e-a2c4-75de0102587c-C/latest"
+  },
+  {
+   "name": "Sdv Office Systems LLC",
+   "recipientId": "88b54a53-a6bb-87a0-c4c9-391906338911-C",
+   "uei": "H4F8YGMM78K6",
+   "FY2026": 276343221.05,
+   "FY2025": 220367033.96,
+   "FY2027ytd": 11160882.87,
+   "growth": 0.25401343424244,
+   "source": "https://www.usaspending.gov/recipient/88b54a53-a6bb-87a0-c4c9-391906338911-C/latest"
+  },
+  {
+   "name": "Corvid Technologies, LLC",
+   "recipientId": "56aed6b3-aba1-ff0b-d0d8-82f4c8891e89-C",
+   "uei": "DD7KTEMDG6A5",
+   "FY2026": 149207706.39,
+   "FY2025": 89024036.18,
+   "FY2027ytd": null,
+   "growth": 0.6760384362748174,
+   "source": "https://www.usaspending.gov/recipient/56aed6b3-aba1-ff0b-d0d8-82f4c8891e89-C/latest"
+  },
+  {
+   "name": "Lc Industries Inc",
+   "recipientId": "a208121f-a7d1-058d-e34f-2963c871ae55-C",
+   "uei": "SWFSJMS9EHB2",
+   "FY2026": 135698541.03,
+   "FY2025": 150261391.74,
+   "FY2027ytd": 7298563.38,
+   "growth": -0.09691678308955351,
+   "source": "https://www.usaspending.gov/recipient/a208121f-a7d1-058d-e34f-2963c871ae55-C/latest"
+  },
+  {
+   "name": "Isometrics Inc",
+   "recipientId": "ab2702cd-8a1d-7549-7b8c-072a281dcde7-C",
+   "uei": "EGJMS6AZ6NL8",
+   "FY2026": 124561527.7,
+   "FY2025": 71657089.86,
+   "FY2027ytd": null,
+   "growth": 0.7383001171741975,
+   "source": "https://www.usaspending.gov/recipient/ab2702cd-8a1d-7549-7b8c-072a281dcde7-C/latest"
+  },
+  {
+   "name": "Seqirus Inc",
+   "recipientId": "c6d55238-7ee3-a83a-bfff-9307ab8fc33b-C",
+   "uei": "Z6N1LJ2RD6E3",
+   "FY2026": 121649707.86,
+   "FY2025": 86157161.79,
+   "FY2027ytd": null,
+   "growth": 0.41195119863058793,
+   "source": "https://www.usaspending.gov/recipient/c6d55238-7ee3-a83a-bfff-9307ab8fc33b-C/latest"
+  },
+  {
+   "name": "Laboratory Corporation of America",
+   "recipientId": "43c3801f-7847-15fb-337a-8c20cb2a5e11-C",
+   "uei": "NHYWLYK6NBM8",
+   "FY2026": 74943899.69,
+   "FY2025": 113863906.11,
+   "FY2027ytd": 22859024.16,
+   "growth": -0.34181162187076847,
+   "source": "https://www.usaspending.gov/recipient/43c3801f-7847-15fb-337a-8c20cb2a5e11-C/latest"
+  },
+  {
+   "name": "Epsilon Inc",
+   "recipientId": "a8d6b655-c921-67cd-f712-5775d68904ca-C",
+   "uei": "JY5SWCCPG5L7",
+   "FY2026": 62048605.98,
+   "FY2025": 147870089.42,
+   "FY2027ytd": 303062.4,
+   "growth": -0.5803843344967391,
+   "source": "https://www.usaspending.gov/recipient/a8d6b655-c921-67cd-f712-5775d68904ca-C/latest"
+  },
+  {
+   "name": "Duke University",
+   "recipientId": "6f191f83-6024-f2be-3012-4b740b10ac7a-C",
+   "uei": "TP7EK8DZV6N5",
+   "FY2026": 58203851.54,
+   "FY2025": 38601834.01,
+   "FY2027ytd": null,
+   "growth": 0.5078001611250388,
+   "source": "https://www.usaspending.gov/recipient/6f191f83-6024-f2be-3012-4b740b10ac7a-C/latest"
+  },
+  {
+   "name": "Chemring Sensors and Electronic Systems, Inc.",
+   "recipientId": "cd7a7d2f-7dad-2dd4-cdbb-25c6b0a03282-C",
+   "uei": "PH57UD5C1KZ3",
+   "FY2026": 55823910.89,
+   "FY2025": 16457196.17,
+   "FY2027ytd": null,
+   "growth": 2.3920669300741526,
+   "source": "https://www.usaspending.gov/recipient/cd7a7d2f-7dad-2dd4-cdbb-25c6b0a03282-C/latest"
+  },
+  {
+   "name": "Dsc-Emi Maintenance Solutions, LLC",
+   "recipientId": "fa791ff2-d2ff-3d6a-2ae8-9b952bb88925-C",
+   "uei": "EV1HN54CYLW9",
+   "FY2026": 51531463.62,
+   "FY2025": 55795321.08,
+   "FY2027ytd": null,
+   "growth": -0.0764196240377653,
+   "source": "https://www.usaspending.gov/recipient/fa791ff2-d2ff-3d6a-2ae8-9b952bb88925-C/latest"
+  },
+  {
+   "name": "Ppd Development LP",
+   "recipientId": "af7be35d-35de-b60c-73d2-10a63b8f12db-C",
+   "uei": "ZANENSW6C665",
+   "FY2026": 50501887.75,
+   "FY2025": null,
+   "FY2027ytd": 2945851,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/af7be35d-35de-b60c-73d2-10a63b8f12db-C/latest"
+  },
+  {
+   "name": "Burlington Industries LLC",
+   "recipientId": "0dc1f06c-dc34-d9c9-f9de-a51900c19ae4-C",
+   "uei": "F918DN4LW5L5",
+   "FY2026": 49563501.07,
+   "FY2025": 130462912.78,
+   "FY2027ytd": null,
+   "growth": -0.620095090521403,
+   "source": "https://www.usaspending.gov/recipient/0dc1f06c-dc34-d9c9-f9de-a51900c19ae4-C/latest"
+  },
+  {
+   "name": "Valiant Government Services LLC",
+   "recipientId": "b3bcfccf-7591-d214-1705-8f25dc360434-C",
+   "uei": "CAYJDHQK3MG3",
+   "FY2026": 49460477.4,
+   "FY2025": 34090533.03,
+   "FY2027ytd": null,
+   "growth": 0.4508566749740843,
+   "source": "https://www.usaspending.gov/recipient/b3bcfccf-7591-d214-1705-8f25dc360434-C/latest"
+  },
+  {
+   "name": "Family Health International",
+   "recipientId": "ce3945f4-76a8-ff4b-68a5-6562e575fc0c-C",
+   "uei": "VRAASTY11EA3",
+   "FY2026": 46114146.95,
+   "FY2025": 244241461.49,
+   "FY2027ytd": null,
+   "growth": -0.8111944357494436,
+   "source": "https://www.usaspending.gov/recipient/ce3945f4-76a8-ff4b-68a5-6562e575fc0c-C/latest"
+  },
+  {
+   "name": "Eaton Corporation",
+   "recipientId": "ad37d43a-4735-29f2-39e2-41c6c74062a2-C",
+   "uei": "NP3NSFVMNUM3",
+   "FY2026": 45131723.43,
+   "FY2025": 34542323.99,
+   "FY2027ytd": 3534594.67,
+   "growth": 0.30656302810041464,
+   "source": "https://www.usaspending.gov/recipient/ad37d43a-4735-29f2-39e2-41c6c74062a2-C/latest"
+  },
+  {
+   "name": "Us Foods Inc",
+   "recipientId": "9ace0fc8-8947-3d94-0885-cc2ef2e87ea3-C",
+   "uei": "KHNHML6R5KB7",
+   "FY2026": 43082652.01,
+   "FY2025": 51883406.67,
+   "FY2027ytd": null,
+   "growth": -0.16962561298213233,
+   "source": "https://www.usaspending.gov/recipient/9ace0fc8-8947-3d94-0885-cc2ef2e87ea3-C/latest"
+  },
+  {
+   "name": "Cox Subscriptions, Inc.",
+   "recipientId": "99e4c347-ddc5-b155-7e16-ecbeacf746d0-C",
+   "uei": "MC59TD7UK9G8",
+   "FY2026": 40530155.98,
+   "FY2025": 37390910.29,
+   "FY2027ytd": 139120.11,
+   "growth": 0.08395745558619289,
+   "source": "https://www.usaspending.gov/recipient/99e4c347-ddc5-b155-7e16-ecbeacf746d0-C/latest"
+  },
+  {
+   "name": "Glaxosmithkline, LLC",
+   "recipientId": "0f969aa5-0e1b-b48e-2827-aaec1153c295-C",
+   "uei": "FRHTPHMZMX47",
+   "FY2026": 40517222.43,
+   "FY2025": 29908789.31,
+   "FY2027ytd": null,
+   "growth": 0.35469282992518436,
+   "source": "https://www.usaspending.gov/recipient/0f969aa5-0e1b-b48e-2827-aaec1153c295-C/latest"
+  },
+  {
+   "name": "Vector Csp LLC",
+   "recipientId": "8292c007-0c90-7fae-7322-9ee2a465848d-C",
+   "uei": "KY9MEJBMKRJ1",
+   "FY2026": 39686799.92,
+   "FY2025": 22299227.6,
+   "FY2027ytd": 10208260.85,
+   "growth": 0.7797387708621799,
+   "source": "https://www.usaspending.gov/recipient/8292c007-0c90-7fae-7322-9ee2a465848d-C/latest"
+  },
+  {
+   "name": "Sandhills Utility Services, LLC",
+   "recipientId": "4ecdebef-4df2-3144-aff0-1bb03591289a-C",
+   "uei": "SE64EGT757K9",
+   "FY2026": 32953264.8,
+   "FY2025": 23193246.31,
+   "FY2027ytd": null,
+   "growth": 0.420812953889593,
+   "source": "https://www.usaspending.gov/recipient/4ecdebef-4df2-3144-aff0-1bb03591289a-C/latest"
+  },
+  {
+   "name": "Williams Construction & Cabinetry, Inc.",
+   "recipientId": "0edc4c28-b91d-91bc-f67b-6fa75f0e8477-C",
+   "uei": "G8N5FNKPPMY5",
+   "FY2026": 32611459.66,
+   "FY2025": 33926649.58,
+   "FY2027ytd": null,
+   "growth": -0.03876568822095866,
+   "source": "https://www.usaspending.gov/recipient/0edc4c28-b91d-91bc-f67b-6fa75f0e8477-C/latest"
+  },
+  {
+   "name": "Qsa-LLC",
+   "recipientId": "4b830243-897c-90ab-a8b8-84b216568f7c-C",
+   "uei": "GWCXF2QZS976",
+   "FY2026": 32336819.75,
+   "FY2025": 12621394.49,
+   "FY2027ytd": null,
+   "growth": 1.5620639443304492,
+   "source": "https://www.usaspending.gov/recipient/4b830243-897c-90ab-a8b8-84b216568f7c-C/latest"
+  },
+  {
+   "name": "Civil Works Contracting LLC",
+   "recipientId": "0383795e-1845-9de3-39c8-00311dc0aedd-C",
+   "uei": "YEJ4V2AZ4BH8",
+   "FY2026": 30900466.83,
+   "FY2025": 28448857.76,
+   "FY2027ytd": null,
+   "growth": 0.08617601067439118,
+   "source": "https://www.usaspending.gov/recipient/0383795e-1845-9de3-39c8-00311dc0aedd-C/latest"
+  },
+  {
+   "name": "Seventh Dimension, LLC",
+   "recipientId": "ea58222e-d1bc-ca60-8389-e5aa5f43d08e-C",
+   "uei": "HUH6MX1KVMP3",
+   "FY2026": 30832404.46,
+   "FY2025": 31623256.17,
+   "FY2027ytd": null,
+   "growth": -0.02500854768871832,
+   "source": "https://www.usaspending.gov/recipient/ea58222e-d1bc-ca60-8389-e5aa5f43d08e-C/latest"
+  },
+  {
+   "name": "Sysco Raleigh, LLC",
+   "recipientId": "67ca13e8-e39c-8aae-6b87-1e2755ed6fdc-C",
+   "uei": "NNTLJABMLAK7",
+   "FY2026": 30663586.75,
+   "FY2025": 24602890.83,
+   "FY2027ytd": null,
+   "growth": 0.24634080449642845,
+   "source": "https://www.usaspending.gov/recipient/67ca13e8-e39c-8aae-6b87-1e2755ed6fdc-C/latest"
+  },
+  {
+   "name": "Eastern Aviation Fuels, Inc.",
+   "recipientId": "504e94a8-8b93-95ed-a506-adb5d0316dbc-C",
+   "uei": "JURSNNYKAPV3",
+   "FY2026": 30623516.73,
+   "FY2025": 14350305.53,
+   "FY2027ytd": null,
+   "growth": 1.1339975421415298,
+   "source": "https://www.usaspending.gov/recipient/504e94a8-8b93-95ed-a506-adb5d0316dbc-C/latest"
+  },
+  {
+   "name": "Transylvania Vocational Services, Inc",
+   "recipientId": "2a52f86f-b346-8cbd-580f-b3735cb1176b-C",
+   "uei": "G6MKMVGV5MC5",
+   "FY2026": 26640693.57,
+   "FY2025": null,
+   "FY2027ytd": 73957.48,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/2a52f86f-b346-8cbd-580f-b3735cb1176b-C/latest"
+  },
+  {
+   "name": "A.M.S. Network, LLC",
+   "recipientId": "1ab79c5f-a364-0733-1dbf-7e93a5755123-C",
+   "uei": "E4FCE9AKZ9P9",
+   "FY2026": 26413597.92,
+   "FY2025": 33666836.23,
+   "FY2027ytd": null,
+   "growth": -0.21544163699993724,
+   "source": "https://www.usaspending.gov/recipient/1ab79c5f-a364-0733-1dbf-7e93a5755123-C/latest"
+  },
+  {
+   "name": "Intrahealth International, Inc.",
+   "recipientId": "242825bb-ade1-4395-4890-ba51b5c59dc7-C",
+   "uei": "TCNLXWJV81T8",
+   "FY2026": 25546031.38,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/242825bb-ade1-4395-4890-ba51b5c59dc7-C/latest"
+  },
+  {
+   "name": "North State Mechanical Inc",
+   "recipientId": "74537ede-3fbe-eb52-9256-23cf61090195-C",
+   "uei": "YAUVCTD3VL75",
+   "FY2026": 25046481,
+   "FY2025": 20454983,
+   "FY2027ytd": null,
+   "growth": 0.2244684339263445,
+   "source": "https://www.usaspending.gov/recipient/74537ede-3fbe-eb52-9256-23cf61090195-C/latest"
+  },
+  {
+   "name": "Cooper Tacia General Contracting Company",
+   "recipientId": "d21d8f12-0db1-de0c-2925-cf14a4b13921-C",
+   "uei": "F17QM1B7G4S4",
+   "FY2026": 25002525,
+   "FY2025": 23657004.65,
+   "FY2027ytd": null,
+   "growth": 0.05687619248111369,
+   "source": "https://www.usaspending.gov/recipient/d21d8f12-0db1-de0c-2925-cf14a4b13921-C/latest"
+  },
+  {
+   "name": "Bryant'S Land and Development Industries, Inc.",
+   "recipientId": "0c4fa0d4-b814-93b5-8fb2-3f38ccd721a7-C",
+   "uei": "Y4ZPM3CNMSQ6",
+   "FY2026": 24411558.17,
+   "FY2025": 14221926.5,
+   "FY2027ytd": null,
+   "growth": 0.7164733744053593,
+   "source": "https://www.usaspending.gov/recipient/0c4fa0d4-b814-93b5-8fb2-3f38ccd721a7-C/latest"
+  },
+  {
+   "name": "Mcrae Industries Inc",
+   "recipientId": "0b8dbb7d-72e9-9c8a-8823-e7e5f7e14221-C",
+   "uei": "DLNNHPHCHLM6",
+   "FY2026": 24269988.6,
+   "FY2025": 26529214.1,
+   "FY2027ytd": null,
+   "growth": -0.08515991056063738,
+   "source": "https://www.usaspending.gov/recipient/0b8dbb7d-72e9-9c8a-8823-e7e5f7e14221-C/latest"
+  },
+  {
+   "name": "Riley Contracting Group, Inc.",
+   "recipientId": "ed44fd94-e874-41eb-75a2-2bf3fb947e30-C",
+   "uei": "FXQXNFEK6P96",
+   "FY2026": 23294308,
+   "FY2025": 11621417.45,
+   "FY2027ytd": 585148,
+   "growth": 1.0044291585102643,
+   "source": "https://www.usaspending.gov/recipient/ed44fd94-e874-41eb-75a2-2bf3fb947e30-C/latest"
+  },
+  {
+   "name": "Dove Medical Supply LLC",
+   "recipientId": "14bf6a57-a61b-c4ac-69d0-3f6f5f38800c-C",
+   "uei": "XM73EN1LAVE7",
+   "FY2026": 23272332.01,
+   "FY2025": 33179967.97,
+   "FY2027ytd": null,
+   "growth": -0.29860293924810555,
+   "source": "https://www.usaspending.gov/recipient/14bf6a57-a61b-c4ac-69d0-3f6f5f38800c-C/latest"
+  },
+  {
+   "name": "Foster-Caviness Co, Inc",
+   "recipientId": "252e229c-3214-9dc9-a2f1-b5f25f2c254d-C",
+   "uei": "KHERZNYCF815",
+   "FY2026": 23082564.44,
+   "FY2025": 30395902.98,
+   "FY2027ytd": null,
+   "growth": -0.24060277284119688,
+   "source": "https://www.usaspending.gov/recipient/252e229c-3214-9dc9-a2f1-b5f25f2c254d-C/latest"
+  },
+  {
+   "name": "Industries of the Blind Inc",
+   "recipientId": "598fb99f-42ac-e0bc-73dc-920f4e3d6e0a-C",
+   "uei": "JEYCU9T1XD41",
+   "FY2026": 22532281.73,
+   "FY2025": 19891069.71,
+   "FY2027ytd": null,
+   "growth": 0.1327838099462374,
+   "source": "https://www.usaspending.gov/recipient/598fb99f-42ac-e0bc-73dc-920f4e3d6e0a-C/latest"
+  },
+  {
+   "name": "Premier Healthcare Solutions, Inc",
+   "recipientId": "f62054d0-80a8-d126-248c-680129268bf6-C",
+   "uei": "P3MPFZWCEB29",
+   "FY2026": 22282499.04,
+   "FY2025": 9932579.5,
+   "FY2027ytd": 94500,
+   "growth": 1.2433748494034202,
+   "source": "https://www.usaspending.gov/recipient/f62054d0-80a8-d126-248c-680129268bf6-C/latest"
+  },
+  {
+   "name": "Trustgrid Technologies LLC",
+   "recipientId": "01f87372-892c-02e9-ecea-5ccd2b08faa9-C",
+   "uei": "GN61VFALH437",
+   "FY2026": 21999842,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/01f87372-892c-02e9-ecea-5ccd2b08faa9-C/latest"
+  },
+  {
+   "name": "Military & Federal Construction Co., Inc.",
+   "recipientId": "eab5c825-b397-4367-d9c4-536c15de24bd-C",
+   "uei": "NRF7MEAFL359",
+   "FY2026": 21992948.52,
+   "FY2025": 42109895.41,
+   "FY2027ytd": null,
+   "growth": -0.4777249312574343,
+   "source": "https://www.usaspending.gov/recipient/eab5c825-b397-4367-d9c4-536c15de24bd-C/latest"
+  },
+  {
+   "name": "Duke Energy Progress, LLC",
+   "recipientId": "80572241-dd00-5ff3-c437-3d34b7b239a5-C",
+   "uei": "K4QFQ421JT93",
+   "FY2026": 21671222.04,
+   "FY2025": 25407204.19,
+   "FY2027ytd": 2415721.9,
+   "growth": -0.14704420533883236,
+   "source": "https://www.usaspending.gov/recipient/80572241-dd00-5ff3-c437-3d34b7b239a5-C/latest"
+  },
+  {
+   "name": "Tex-Tech Engineered Composites, LLC",
+   "recipientId": "a62b8387-173b-49e1-3022-6f9131cbbca8-C",
+   "uei": "RT2VWL411U65",
+   "FY2026": 20832679.07,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/a62b8387-173b-49e1-3022-6f9131cbbca8-C/latest"
+  },
+  {
+   "name": "Southern Management Inc",
+   "recipientId": "36b84710-77ea-dd21-75d9-85eeeaf11939-C",
+   "uei": "Y536XM52MGV5",
+   "FY2026": 20830518.42,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/36b84710-77ea-dd21-75d9-85eeeaf11939-C/latest"
+  },
+  {
+   "name": "Eastern Carolina Vocational Center Inc",
+   "recipientId": "619f5408-f150-a3d5-e7d1-b80d70c99975-C",
+   "uei": "LJB6SS6Y6F68",
+   "FY2026": 20300591,
+   "FY2025": 21264458.99,
+   "FY2027ytd": null,
+   "growth": -0.04532765166766175,
+   "source": "https://www.usaspending.gov/recipient/619f5408-f150-a3d5-e7d1-b80d70c99975-C/latest"
+  },
+  {
+   "name": "Achuti LLC",
+   "recipientId": "d7c2a0d5-0a1b-5981-8aa8-8c2cc068313e-C",
+   "uei": "D8GGP2SJKJ85",
+   "FY2026": 19766322.42,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/d7c2a0d5-0a1b-5981-8aa8-8c2cc068313e-C/latest"
+  },
+  {
+   "name": "Iem International, Inc.",
+   "recipientId": "f15e05da-bb9f-f135-065d-3de772ff946c-C",
+   "uei": "MES2SE62JGL3",
+   "FY2026": 19646719.2,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/f15e05da-bb9f-f135-065d-3de772ff946c-C/latest"
+  },
+  {
+   "name": "Safety & Security International, Inc.",
+   "recipientId": "ffdc5c4f-f231-a891-a54b-b454899ce3b7-C",
+   "uei": "EEMGLBKJMXW4",
+   "FY2026": 19552450.51,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/ffdc5c4f-f231-a891-a54b-b454899ce3b7-C/latest"
+  },
+  {
+   "name": "Central Lake Armor Express Inc",
+   "recipientId": "d16a5e48-af62-0b38-5caf-634715e12828-C",
+   "uei": "JCWBXRQCL8K7",
+   "FY2026": 18516988.12,
+   "FY2025": 17836514.02,
+   "FY2027ytd": null,
+   "growth": 0.03815062176594536,
+   "source": "https://www.usaspending.gov/recipient/d16a5e48-af62-0b38-5caf-634715e12828-C/latest"
+  },
+  {
+   "name": "Group III Management Inc",
+   "recipientId": "8f665829-c2f1-928b-ab8d-c739c42a08b1-C",
+   "uei": "PH8LWHJXYGU6",
+   "FY2026": 18350602.53,
+   "FY2025": 21995142.51,
+   "FY2027ytd": null,
+   "growth": -0.16569749335986458,
+   "source": "https://www.usaspending.gov/recipient/8f665829-c2f1-928b-ab8d-c739c42a08b1-C/latest"
+  },
+  {
+   "name": "Wells Global, LLC",
+   "recipientId": "7968421e-ea59-775f-0d51-4e5b98b17d61-C",
+   "uei": "GAWHH13W8WR9",
+   "FY2026": 17274650.06,
+   "FY2025": 37545775.75,
+   "FY2027ytd": 75033,
+   "growth": -0.5399042977557869,
+   "source": "https://www.usaspending.gov/recipient/7968421e-ea59-775f-0d51-4e5b98b17d61-C/latest"
+  },
+  {
+   "name": "Mccalls Grading & Construction Inc",
+   "recipientId": "38c064d9-9ebe-4cfc-a675-b0052555d5d1-C",
+   "uei": "F7G8HLU9CHT5",
+   "FY2026": 16919408,
+   "FY2025": null,
+   "FY2027ytd": 263703.65,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/38c064d9-9ebe-4cfc-a675-b0052555d5d1-C/latest"
+  },
+  {
+   "name": "Dot Construction, Inc",
+   "recipientId": "5849f017-b33f-1cf2-fa37-8a7adbbf7b04-C",
+   "uei": "G8EGCVLZN7P1",
+   "FY2026": 16336476.3,
+   "FY2025": 16485244.57,
+   "FY2027ytd": null,
+   "growth": -0.009024328960865368,
+   "source": "https://www.usaspending.gov/recipient/5849f017-b33f-1cf2-fa37-8a7adbbf7b04-C/latest"
+  },
+  {
+   "name": "Wake Forest University Health Sciences",
+   "recipientId": "623a4232-bd5e-fb60-cf01-48cd08a5a593-C",
+   "uei": "SN7KD2UK7GC5",
+   "FY2026": 15560042.26,
+   "FY2025": 19415307.32,
+   "FY2027ytd": 2837436.03,
+   "growth": -0.19856832531456425,
+   "source": "https://www.usaspending.gov/recipient/623a4232-bd5e-fb60-cf01-48cd08a5a593-C/latest"
+  },
+  {
+   "name": "Government Contracting Resources, Inc.",
+   "recipientId": "8dd3a667-addd-2a50-e094-ba08b780c9fc-C",
+   "uei": "VHJTJ4CK3SU1",
+   "FY2026": 15498384.97,
+   "FY2025": 18742142.52,
+   "FY2027ytd": null,
+   "growth": -0.17307293157858236,
+   "source": "https://www.usaspending.gov/recipient/8dd3a667-addd-2a50-e094-ba08b780c9fc-C/latest"
+  },
+  {
+   "name": "Kimley-Horn and Associates Inc",
+   "recipientId": "03f18659-f2a7-dc7b-301f-8458166856c0-C",
+   "uei": "V8PKGG6NLKV6",
+   "FY2026": 14435489.17,
+   "FY2025": 14252486.48,
+   "FY2027ytd": 74169.66,
+   "growth": 0.012840053576391779,
+   "source": "https://www.usaspending.gov/recipient/03f18659-f2a7-dc7b-301f-8458166856c0-C/latest"
+  },
+  {
+   "name": "Dana Safety Supply, Inc.",
+   "recipientId": "6e26d31e-607d-231e-5c54-d05688a6b522-C",
+   "uei": "FDNXL5D5KUF3",
+   "FY2026": 14281500.32,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/6e26d31e-607d-231e-5c54-d05688a6b522-C/latest"
+  },
+  {
+   "name": "Walsingham Group Inc",
+   "recipientId": "c50722f1-17f8-9a6a-7d3f-f9720250ad51-C",
+   "uei": "ESFGPA8FG547",
+   "FY2026": 14190046.64,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/c50722f1-17f8-9a6a-7d3f-f9720250ad51-C/latest"
+  },
+  {
+   "name": "Veteran Office Design, LLC",
+   "recipientId": "99a15893-82e8-4f29-7982-f2a253e79764-C",
+   "uei": "JKELJ5727GB3",
+   "FY2026": 14036603.26,
+   "FY2025": 17538136.14,
+   "FY2027ytd": null,
+   "growth": -0.1996525087984635,
+   "source": "https://www.usaspending.gov/recipient/99a15893-82e8-4f29-7982-f2a253e79764-C/latest"
+  },
+  {
+   "name": "University of North Carolina at Chapel Hill",
+   "recipientId": "f371179b-9f27-8013-f81c-4fd314b1f981-C",
+   "uei": "D3LHU66KBLD5",
+   "FY2026": 13951091.91,
+   "FY2025": 18243578.7,
+   "FY2027ytd": 3685129.95,
+   "growth": -0.23528754202156615,
+   "source": "https://www.usaspending.gov/recipient/f371179b-9f27-8013-f81c-4fd314b1f981-C/latest"
+  },
+  {
+   "name": "Quality Roofers and Guttering, Inc.",
+   "recipientId": "93192263-e9c0-a410-7038-f6ef31890f31-C",
+   "uei": "G9JCNKQ1GDW4",
+   "FY2026": 13796284,
+   "FY2025": 10025282,
+   "FY2027ytd": null,
+   "growth": 0.376149219543151,
+   "source": "https://www.usaspending.gov/recipient/93192263-e9c0-a410-7038-f6ef31890f31-C/latest"
+  },
+  {
+   "name": "Winston-Salem Industries for the Blind Inc",
+   "recipientId": "d73c9cbf-635d-73e0-03d9-ea3a43e9e5c1-C",
+   "uei": "KJVWJ75FBTT9",
+   "FY2026": 13393751.68,
+   "FY2025": 26493602.26,
+   "FY2027ytd": 512149.13,
+   "growth": -0.49445335713287036,
+   "source": "https://www.usaspending.gov/recipient/d73c9cbf-635d-73e0-03d9-ea3a43e9e5c1-C/latest"
+  },
+  {
+   "name": "Parata Systems LLC",
+   "recipientId": "a42f7a7b-71cd-457f-4990-4e7f8dd03b21-C",
+   "uei": "YSK7Y3XCL1C7",
+   "FY2026": 13369066.88,
+   "FY2025": 15139544.58,
+   "FY2027ytd": 213309.96,
+   "growth": -0.11694392064731443,
+   "source": "https://www.usaspending.gov/recipient/a42f7a7b-71cd-457f-4990-4e7f8dd03b21-C/latest"
+  },
+  {
+   "name": "Mills Manufacturing Corporation",
+   "recipientId": "13f13cdb-aa85-09ff-1a3f-cda50ee43285-C",
+   "uei": "ZNDJVN7HEG88",
+   "FY2026": 13312946.46,
+   "FY2025": 47751437.52,
+   "FY2027ytd": null,
+   "growth": -0.7212032317472313,
+   "source": "https://www.usaspending.gov/recipient/13f13cdb-aa85-09ff-1a3f-cda50ee43285-C/latest"
+  },
+  {
+   "name": "The Remi Group LLC",
+   "recipientId": "34df9309-72a6-43ad-a834-b82179dbf8b8-C",
+   "uei": "X458FNVQ1YX9",
+   "FY2026": 13108757.51,
+   "FY2025": 11883816.89,
+   "FY2027ytd": null,
+   "growth": 0.10307636269881966,
+   "source": "https://www.usaspending.gov/recipient/34df9309-72a6-43ad-a834-b82179dbf8b8-C/latest"
+  },
+  {
+   "name": "T&M Service Group, LLC",
+   "recipientId": "a85266af-9834-106a-e820-e9038bd9f1ed-C",
+   "uei": "YEDPX6W9WAM5",
+   "FY2026": 12967069.13,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/a85266af-9834-106a-e820-e9038bd9f1ed-C/latest"
+  },
+  {
+   "name": "R & W Construction Company",
+   "recipientId": "eea69934-057b-8ebc-6362-5c35fe82564d-C",
+   "uei": "JUVYMMSVF2N8",
+   "FY2026": 12960349,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/eea69934-057b-8ebc-6362-5c35fe82564d-C/latest"
+  },
+  {
+   "name": "Employment Source Inc",
+   "recipientId": "3d20e420-7bfd-62bf-fef8-e65b0b9cb402-C",
+   "uei": "WWVYRX95NMD7",
+   "FY2026": 12847277.71,
+   "FY2025": 14223126.25,
+   "FY2027ytd": 2182984.8,
+   "growth": -0.09673320167568639,
+   "source": "https://www.usaspending.gov/recipient/3d20e420-7bfd-62bf-fef8-e65b0b9cb402-C/latest"
+  },
+  {
+   "name": "Andritz Hydro Corp",
+   "recipientId": "2c6116eb-1bf4-a15f-5152-66bfb6e67516-C",
+   "uei": "FG2MMDESNTH3",
+   "FY2026": 12839598.48,
+   "FY2025": 14359156.6,
+   "FY2027ytd": null,
+   "growth": -0.10582502596287578,
+   "source": "https://www.usaspending.gov/recipient/2c6116eb-1bf4-a15f-5152-66bfb6e67516-C/latest"
+  },
+  {
+   "name": "Joyce & Associates Construction, Inc.",
+   "recipientId": "007e7e97-e3d0-dbc5-5cc8-c03ff535f97a-C",
+   "uei": "PAL3KHU82R65",
+   "FY2026": 12724965.9,
+   "FY2025": 12929728.81,
+   "FY2027ytd": null,
+   "growth": -0.01583659742667102,
+   "source": "https://www.usaspending.gov/recipient/007e7e97-e3d0-dbc5-5cc8-c03ff535f97a-C/latest"
+  },
+  {
+   "name": "Hyster-Yale Group, Inc.",
+   "recipientId": "0aeb1cb5-441f-dd96-14f6-285c0c2f4b47-C",
+   "uei": "D8QCWPDLPN98",
+   "FY2026": 12683702.46,
+   "FY2025": 33079955.5,
+   "FY2027ytd": null,
+   "growth": -0.6165743796118468,
+   "source": "https://www.usaspending.gov/recipient/0aeb1cb5-441f-dd96-14f6-285c0c2f4b47-C/latest"
+  },
+  {
+   "name": "Quantico Tactical Incorporated",
+   "recipientId": "b1b78878-bf4e-5999-2b17-ddcce601c839-C",
+   "uei": "YUFVFMS2U598",
+   "FY2026": 12614790.23,
+   "FY2025": 23368793.16,
+   "FY2027ytd": 142319.44,
+   "growth": -0.4601864912907638,
+   "source": "https://www.usaspending.gov/recipient/b1b78878-bf4e-5999-2b17-ddcce601c839-C/latest"
+  },
+  {
+   "name": "Mechworks Mechanical Contractors, Inc",
+   "recipientId": "f186a9c2-0c0e-50c8-9b80-38ff31a1a297-C",
+   "uei": "XNENMZLJQQK6",
+   "FY2026": 12566652,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/f186a9c2-0c0e-50c8-9b80-38ff31a1a297-C/latest"
+  },
+  {
+   "name": "Coastal Enterprises of Jacksonville Inc",
+   "recipientId": "dd49ee06-9045-02d7-9d13-4aeed5ef7841-C",
+   "uei": "UN43CBJTGAU7",
+   "FY2026": 12498473.2,
+   "FY2025": 37226200.21,
+   "FY2027ytd": null,
+   "growth": -0.664256004386863,
+   "source": "https://www.usaspending.gov/recipient/dd49ee06-9045-02d7-9d13-4aeed5ef7841-C/latest"
+  },
+  {
+   "name": "K2 Solutions Inc",
+   "recipientId": "adc00ace-9d10-5c5f-9250-3f1633308b24-C",
+   "uei": "UPZECLR4WMF3",
+   "FY2026": 12270282.38,
+   "FY2025": 12944111.49,
+   "FY2027ytd": null,
+   "growth": -0.052056806720226986,
+   "source": "https://www.usaspending.gov/recipient/adc00ace-9d10-5c5f-9250-3f1633308b24-C/latest"
+  },
+  {
+   "name": "Clark Nexsen/ Michael Baker Jv",
+   "recipientId": "4e11d8e8-7a36-cb8c-fc04-f77ac059f3b1-C",
+   "uei": "RAJJEGKBN5S3",
+   "FY2026": 12144416,
+   "FY2025": 12781439.16,
+   "FY2027ytd": null,
+   "growth": -0.0498397052182972,
+   "source": "https://www.usaspending.gov/recipient/4e11d8e8-7a36-cb8c-fc04-f77ac059f3b1-C/latest"
+  },
+  {
+   "name": "Tatra Solutions, Inc.",
+   "recipientId": "2df1f3b9-2e29-691d-d6e5-5b64290642d8-C",
+   "uei": "CAH4PRJ87X97",
+   "FY2026": 12125160.61,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/2df1f3b9-2e29-691d-d6e5-5b64290642d8-C/latest"
+  },
+  {
+   "name": "Blueally Technology Solutions LLC",
+   "recipientId": "f1bda47d-6315-f826-0283-246345ef2c76-C",
+   "uei": "D1PMXRCHUKG8",
+   "FY2026": 11643828.96,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/f1bda47d-6315-f826-0283-246345ef2c76-C/latest"
+  },
+  {
+   "name": "Health & Human Services, North Carolina",
+   "recipientId": "b42fe136-dcae-94d5-996e-e0721c202c97-C",
+   "uei": "JVAVP9ZZLDY3",
+   "FY2026": 11550796.06,
+   "FY2025": 13358884.27,
+   "FY2027ytd": null,
+   "growth": -0.13534724707963947,
+   "source": "https://www.usaspending.gov/recipient/b42fe136-dcae-94d5-996e-e0721c202c97-C/latest"
+  },
+  {
+   "name": "Worrell Contracting Co Inc",
+   "recipientId": "e2109077-8da2-5ee6-b53b-2437bbdb6e24-C",
+   "uei": "FF7SELFFUG81",
+   "FY2026": 11465199.56,
+   "FY2025": null,
+   "FY2027ytd": 365271.5,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/e2109077-8da2-5ee6-b53b-2437bbdb6e24-C/latest"
+  },
+  {
+   "name": "Deere & Company",
+   "recipientId": "b6e4ad0f-6877-b3a2-4c54-578230c072a9-C",
+   "uei": "FNSWEDARMK53",
+   "FY2026": 11368830.65,
+   "FY2025": 11573076.12,
+   "FY2027ytd": null,
+   "growth": -0.01764833030407812,
+   "source": "https://www.usaspending.gov/recipient/b6e4ad0f-6877-b3a2-4c54-578230c072a9-C/latest"
+  },
+  {
+   "name": "Apogee Consulting Group, P.A.",
+   "recipientId": "83bf424f-f492-0192-03d1-6ab9d1280a98-C",
+   "uei": "C2TLU3VGKPC6",
+   "FY2026": 11253015.27,
+   "FY2025": 18058001.07,
+   "FY2027ytd": 451340.25,
+   "growth": -0.37684048049510943,
+   "source": "https://www.usaspending.gov/recipient/83bf424f-f492-0192-03d1-6ab9d1280a98-C/latest"
+  },
+  {
+   "name": "Graham Advisory Network Inc",
+   "recipientId": "385749df-267a-144a-3301-e2b3ddf4b148-C",
+   "uei": "QHLAKD5FW2S9",
+   "FY2026": 11227677.32,
+   "FY2025": null,
+   "FY2027ytd": 239317.1,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/385749df-267a-144a-3301-e2b3ddf4b148-C/latest"
+  },
+  {
+   "name": "Gcr-Dean LLC",
+   "recipientId": "70588948-f7b7-41b1-a3d3-655026be73e4-C",
+   "uei": "RKJ2NXQHKDH7",
+   "FY2026": 11190206.75,
+   "FY2025": 13268665.09,
+   "FY2027ytd": null,
+   "growth": -0.15664411799544486,
+   "source": "https://www.usaspending.gov/recipient/70588948-f7b7-41b1-a3d3-655026be73e4-C/latest"
+  },
+  {
+   "name": "Knowledgebank, Inc.",
+   "recipientId": "3d343676-957b-2c00-3f58-616db0dec880-C",
+   "uei": "MWMKKLFMK8B4",
+   "FY2026": 11124238.46,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/3d343676-957b-2c00-3f58-616db0dec880-C/latest"
+  },
+  {
+   "name": "Interdyne Corp",
+   "recipientId": "9f57d18c-c597-ccba-608d-421b4f55a107-C",
+   "uei": "HCMNS8AKL1P1",
+   "FY2026": 11061175.8,
+   "FY2025": 11000107.03,
+   "FY2027ytd": null,
+   "growth": 0.0055516523460591655,
+   "source": "https://www.usaspending.gov/recipient/9f57d18c-c597-ccba-608d-421b4f55a107-C/latest"
+  },
+  {
+   "name": "Trane U.S. Inc.",
+   "recipientId": "da8cef52-2b5f-0765-2207-bc73a9c07b73-C",
+   "uei": "QJFJBF8ZBUM8",
+   "FY2026": 11020202.38,
+   "FY2025": null,
+   "FY2027ytd": 1481739.56,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/da8cef52-2b5f-0765-2207-bc73a9c07b73-C/latest"
+  },
+  {
+   "name": "Macgyver Solutions, Inc.",
+   "recipientId": "6c8f6151-2505-fd29-23be-edcc245db347-C",
+   "uei": "JKVNT2ZWLA44",
+   "FY2026": 10967620.95,
+   "FY2025": 47131104.24,
+   "FY2027ytd": 310127.21,
+   "growth": -0.7672954808325536,
+   "source": "https://www.usaspending.gov/recipient/6c8f6151-2505-fd29-23be-edcc245db347-C/latest"
+  },
+  {
+   "name": "Vetpride Services, Inc.",
+   "recipientId": "56e75d51-4ec4-a73f-7689-36717de060b2-C",
+   "uei": "JC8KASZL6W95",
+   "FY2026": 10960852.1,
+   "FY2025": null,
+   "FY2027ytd": 5865670.1,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/56e75d51-4ec4-a73f-7689-36717de060b2-C/latest"
+  },
+  {
+   "name": "Blue Rock Structures, Inc",
+   "recipientId": "b9559d20-d363-c441-7ea3-fd29199f6692-C",
+   "uei": "LL9YWE8DY5T3",
+   "FY2026": 10879042.3,
+   "FY2025": 20028353.66,
+   "FY2027ytd": null,
+   "growth": -0.4568179449653277,
+   "source": "https://www.usaspending.gov/recipient/b9559d20-d363-c441-7ea3-fd29199f6692-C/latest"
+  },
+  {
+   "name": "Vetpride-Emi Maintenance Solutions, LLC",
+   "recipientId": "86a0b1e2-f134-14b0-831b-10816c2582d3-C",
+   "uei": "UT7WNS3MMQH9",
+   "FY2026": 10733283.18,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/86a0b1e2-f134-14b0-831b-10816c2582d3-C/latest"
+  },
+  {
+   "name": "Lumbee It Solutions LLC",
+   "recipientId": "ed3bf36b-ddb7-3337-a744-f52507c0af3b-C",
+   "uei": "M5TCH3K91RP6",
+   "FY2026": 10676042.52,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/ed3bf36b-ddb7-3337-a744-f52507c0af3b-C/latest"
+  },
+  {
+   "name": "Oak Grove Technologies, LLC",
+   "recipientId": "7ace9ecd-e0ad-9c5d-5be7-302c571c8882-C",
+   "uei": "GZMHL3R9LGZ3",
+   "FY2026": 10636404.51,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/7ace9ecd-e0ad-9c5d-5be7-302c571c8882-C/latest"
+  },
+  {
+   "name": "Rho Federal Systems Division Inc",
+   "recipientId": "a30cd4b9-c139-3092-1786-8a861257cb18-C",
+   "uei": "XCPKWEM58CV5",
+   "FY2026": 10538179.79,
+   "FY2025": 11561079.56,
+   "FY2027ytd": null,
+   "growth": -0.08847787654183407,
+   "source": "https://www.usaspending.gov/recipient/a30cd4b9-c139-3092-1786-8a861257cb18-C/latest"
+  },
+  {
+   "name": "T E Davis Construction Co",
+   "recipientId": "b31de60a-59dc-7d06-8b3e-54a6ed82925a-C",
+   "uei": "GVU8QN8M81V1",
+   "FY2026": 10387547.58,
+   "FY2025": null,
+   "FY2027ytd": null,
+   "growth": null,
+   "source": "https://www.usaspending.gov/recipient/b31de60a-59dc-7d06-8b3e-54a6ed82925a-C/latest"
+  },
+  {
+   "name": "Scott Technologies, Inc.",
+   "recipientId": "1aa2628c-1397-0a64-42fc-579340cc3882-C",
+   "uei": "D64VMAKN5UY7",
+   "FY2026": 10294071.79,
+   "FY2025": 28200346.42,
+   "FY2027ytd": null,
+   "growth": -0.6349664774791799,
+   "source": "https://www.usaspending.gov/recipient/1aa2628c-1397-0a64-42fc-579340cc3882-C/latest"
+  },
+  {
+   "name": "Aesthetic Home Investments LLC",
+   "recipientId": "abc92d65-54f6-9b44-dac9-48e86c1ab3d1-C",
+   "uei": "NMV2FE84VSL8",
+   "FY2026": 10233899.19,
+   "FY2025": 14878834.14,
+   "FY2027ytd": null,
+   "growth": -0.3121840667282283,
+   "source": "https://www.usaspending.gov/recipient/abc92d65-54f6-9b44-dac9-48e86c1ab3d1-C/latest"
+  }
+ ],
+ "newAwards": [
+  {
+   "recipient": "Peachtree Lumber Company, Inc",
+   "amount": 99575262,
+   "agency": "Department of Agriculture",
+   "startDate": "2026-10-07",
+   "description": "BUCK HELENE FUELS REDUCTION IRSC -12363N26C4003 $32,400.00 TIMBER VALUE APPLIED $87,804,491.92 TOTAL DOLLAR VALUE APPLIED $87,836,891.92 TOTAL CONTRACT VALUE  COR: BRYAN KILLIAN PERFORMANCE PERIOD FOR AWARDED ITEMS: DATE OF AWARD-9/13/2028.",
+   "awardId": "12363N27C4000",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_12363N27C4000_12C2_-NONE-_-NONE-"
+  },
+  {
+   "recipient": "Seqirus Inc",
+   "amount": 42769479,
+   "agency": "Department of Health and Human Services",
+   "startDate": "2026-09-30",
+   "description": "FORMULATION AND FILLING OF MF59-ADJUVANTED CELL-BASED A/HENAN/4-10CNIC/2022 (H3N8)-LIKE VACCINE AND CLINICAL TRIAL IMPLEMENTATION",
+   "awardId": "75A50126F61015",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_75A50126F61015_7505_75A50122D00004_7505"
+  },
+  {
+   "recipient": "Research Triangle Institute",
+   "amount": 16163597,
+   "agency": "Department of Health and Human Services",
+   "startDate": "2026-09-25",
+   "description": "KCC - ACO REACH AND KCC PROGRAM ANALYSIS AND QUALITY LFO",
+   "awardId": "75FCMC26F0166",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_75FCMC26F0166_7530_75FCMC19D0095_7530"
+  },
+  {
+   "recipient": "Premier Healthcare Solutions, Inc",
+   "amount": 11252000,
+   "agency": "Department of Health and Human Services",
+   "startDate": "2026-09-30",
+   "description": "HHS FERTILITY DATA AND ANALYSIS INITIATIVE",
+   "awardId": "7571MN26C00062",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_7571MN26C00062_7571_-NONE-_-NONE-"
+  },
+  {
+   "recipient": "Premier Healthcare Solutions, Inc",
+   "amount": 9999999,
+   "agency": "Department of Health and Human Services",
+   "startDate": "2026-09-30",
+   "description": "HHS MATERNAL MORBIDITY AND MORTALITY DATA AND ANALYSIS INITIATIVE",
+   "awardId": "7571PS26C00061",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_7571PS26C00061_7571_-NONE-_-NONE-"
+  },
+  {
+   "recipient": "Duke University",
+   "amount": 8301883,
+   "agency": "Department of Health and Human Services",
+   "startDate": "2026-09-28",
+   "description": "NICHD: R&D: BESPOKE GENE THERAPY CONSORTIUM (BGTC) - SUPPORT FOR NIH-SPONSORED CLINICAL TRIALS: NON-SEVERABLE",
+   "awardId": "75N94026F00002",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_75N94026F00002_7529_75N94025D00003_7529"
+  },
+  {
+   "recipient": "Kimley-Horn and Associates Inc",
+   "amount": 7245000,
+   "agency": "Department of Transportation",
+   "startDate": "2026-09-21",
+   "description": "THE STUDY IDENTIFIES CRITICAL INFRASTRUCTURE IMPROVEMENTS THAT MAXIMIZE OPERATIONAL EFFICIENCY AND SERVICE DELIVERY WHILE STRICTLY MINIMIZING PROJECT COSTS AND ENVIRONMENTAL IMPACTS. BY EVALUATING THE STATION'S TRACK, PLATFORMS, AND CONCOURSE CO",
+   "awardId": "693JJ626F00032N",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_693JJ626F00032N_6930_GS10F0501X_4732"
+  },
+  {
+   "recipient": "Research Triangle Institute",
+   "amount": 6284293.7,
+   "agency": "Department of Justice",
+   "startDate": "2026-09-30",
+   "description": "NIJ-NAMUS",
+   "awardId": "15PNJD26F00000004",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_15PNJD26F00000004_1550_GS00F354CA_4732"
+  },
+  {
+   "recipient": "Sdv Office Systems LLC",
+   "amount": 5886040,
+   "agency": "Department of Veterans Affairs",
+   "startDate": "2026-09-30",
+   "description": "TWO DA VINCI SURGICAL SYSTEMS AND GENERATOR",
+   "awardId": "36C24626N1102",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_36C24626N1102_3600_36C10G25D0013_3600"
+  },
+  {
+   "recipient": "Duke University",
+   "amount": 5699498,
+   "agency": "Department of Health and Human Services",
+   "startDate": "2026-09-28",
+   "description": "NICHD: R&D: INNOVATIVE TRIAL DESIGNS AND LABS 2.0: NON-SEVERABLE",
+   "awardId": "75N94026F00001",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_75N94026F00001_7529_75N94025D00003_7529"
+  },
+  {
+   "recipient": "High Lonesome Timber LLC",
+   "amount": 4975000,
+   "agency": "Department of Agriculture",
+   "startDate": "2026-09-24",
+   "description": "HURRICANE HELENE ROADSIDE DEBRIS MITIGATION FOR FUELS REDUCTION",
+   "awardId": "12363N26F4216",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_12363N26F4216_12C2_12363N26A4041_12C2"
+  },
+  {
+   "recipient": "Mccalls Grading & Construction Inc",
+   "amount": 4536521,
+   "agency": "Department of Agriculture",
+   "startDate": "2026-10-15",
+   "description": "REPAIRS TO NFSR 99, TABLE ROCK RECREATION SITE, AND BROWN MTN. OVERLOOK ON THE GRANDFATHER RANGER DISTRICT OF THE PISGAH NATIONAL FOREST",
+   "awardId": "12445226F0035",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_12445226F0035_12C2_12445224D0049_12C2"
+  },
+  {
+   "recipient": "Medex Medical Transport Service Inc",
+   "amount": 4223551.75,
+   "agency": "Department of Veterans Affairs",
+   "startDate": "2026-11-19",
+   "description": "ALS/BLS AMBULANCE SERVICE FOR SALISBURY VA HEALTH CARE SYSTEM.  MODIFICATION TO EXERCISE OPTION YEAR ONE.",
+   "awardId": "36C24627N0083",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_36C24627N0083_3600_36C24625D0012_3600"
+  },
+  {
+   "recipient": "Bryant'S Land and Development Industries, Inc.",
+   "amount": 3771519,
+   "agency": "Department of the Interior",
+   "startDate": "2026-09-21",
+   "description": "BLRI-354977 BLUE RIDGE PARKWAY HAZARDOUS",
+   "awardId": "140P2026F0224",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_140P2026F0224_1443_12363N26A4244_12C2"
+  },
+  {
+   "recipient": "Sdv Office Systems LLC",
+   "amount": 3698777,
+   "agency": "Department of Veterans Affairs",
+   "startDate": "2026-09-30",
+   "description": "DAVINCI ROBOTIC ARM AND ACCESSORIES",
+   "awardId": "36C26326N0733",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_36C26326N0733_3600_36C10G25D0013_3600"
+  },
+  {
+   "recipient": "Laboratory Corporation of America",
+   "amount": 3500000,
+   "agency": "Department of Veterans Affairs",
+   "startDate": "2026-09-30",
+   "description": "LABCORP - HEMATOLOGY MOLECULAR TESTING SERVICES",
+   "awardId": "36C10X26F0093",
+   "source": "https://www.usaspending.gov/award/CONT_AWD_36C10X26F0093_3600_V797D50532_3600"
+  }
+ ],
+ "warn": {
+  "year": 2026,
+  "sourceCsv": "https://files.nc.gov/commerce/2026-11/warn%20summary%20report%20111126.csv?VersionId=u2xUi_nl5S4QRbE6FdUJcMDSnyE2Lche",
+  "sourcePage": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
+  "totals": {
+   "notices": 71,
+   "workersAffected": 6955
+  },
+  "notices": [
+   {
+    "company": "Avelo Airlines, Inc.",
+    "county": "New Hanover",
+    "city": "Wilmington",
+    "noticeNumber": "202600001",
+    "noticeDate": "1/7/2026",
+    "effectiveDate": "3/6/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 82
+   },
+   {
+    "company": "Avelo Airlines, Inc.",
+    "county": "Wake",
+    "city": "Morrisville",
+    "noticeNumber": "202600002",
+    "noticeDate": "1/7/2026",
+    "effectiveDate": "3/6/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 78
+   },
+   {
+    "company": "Thermo Fisher Scientific",
+    "county": "Buncombe",
+    "city": "Asheville",
+    "noticeNumber": "202600003",
+    "noticeDate": "1/8/2026",
+    "effectiveDate": "3/31/2028",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 423
+   },
+   {
+    "company": "SMBC MANUBANK",
+    "county": "N/A",
+    "city": "New York NY",
+    "noticeNumber": "202600004",
+    "noticeDate": "1/8/2026",
+    "effectiveDate": "10/9/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 28
+   },
+   {
+    "company": "Fortrex",
+    "county": "Chatham",
+    "city": "Siler City",
+    "noticeNumber": "202600005",
+    "noticeDate": "1/12/2026",
+    "effectiveDate": "2/6/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 170
+   },
+   {
+    "company": "Parkdale Mills",
+    "county": "Stokes",
+    "city": "Walnut Cove",
+    "noticeNumber": "202600006",
+    "noticeDate": "1/13/2026",
+    "effectiveDate": "1/13/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 72
+   },
+   {
+    "company": "Access East",
+    "county": "Pitt",
+    "city": "Greenville",
+    "noticeNumber": "202600007",
+    "noticeDate": "1/19/2026",
+    "effectiveDate": "3/31/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 31
+   },
+   {
+    "company": "CJ Logistics America, LLC",
+    "county": "Forsyth",
+    "city": "Rural Hall",
+    "noticeNumber": "202600008",
+    "noticeDate": "1/20/2026",
+    "effectiveDate": "3/23/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 99
+   },
+   {
+    "company": "Firestone Fibers and Textiles, LLC",
+    "county": "Gaston",
+    "city": "Gastonia",
+    "noticeNumber": "202600009",
+    "noticeDate": "1/27/2026",
+    "effectiveDate": "4/28/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 4
+   },
+   {
+    "company": "Firestone Fibers and Textiles, LLC",
+    "county": "Gaston",
+    "city": "Kings Mountain",
+    "noticeNumber": "202600009",
+    "noticeDate": "1/27/2026",
+    "effectiveDate": "4/28/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 77
+   },
+   {
+    "company": "GMRI, Inc. dba Bahama Breeze",
+    "county": "Wake",
+    "city": "Raleigh",
+    "noticeNumber": "202600010",
+    "noticeDate": "2/3/2026",
+    "effectiveDate": "4/5/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 75
+   },
+   {
+    "company": "Wells Fargo",
+    "county": "Wake",
+    "city": "Raleigh",
+    "noticeNumber": "202600011",
+    "noticeDate": "2/3/2026",
+    "effectiveDate": "6/27/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 138
+   },
+   {
+    "company": "Avantor Fluid Handling, LLC",
+    "county": "Wake",
+    "city": "Morrisville",
+    "noticeNumber": "202600012",
+    "noticeDate": "2/6/2026",
+    "effectiveDate": "7/10/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 54
+   },
+   {
+    "company": "LTI Holdings Inc. DBA Boyd",
+    "county": "Union",
+    "city": "Monroe",
+    "noticeNumber": "202600013",
+    "noticeDate": "2/11/2026",
+    "effectiveDate": "9/1/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 63
+   },
+   {
+    "company": "Lowe's Companies, Inc.",
+    "county": "Mecklenburg",
+    "city": "Charlotte",
+    "noticeNumber": "202600014",
+    "noticeDate": "2/13/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 49
+   },
+   {
+    "company": "Lowe's Companies, Inc.",
+    "county": "Iredell",
+    "city": "Mooresville",
+    "noticeNumber": "202600014",
+    "noticeDate": "2/13/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 178
+   },
+   {
+    "company": "Corning Incorporated",
+    "county": "Edgecombe",
+    "city": "Tarboro",
+    "noticeNumber": "202600015",
+    "noticeDate": "2/19/2026",
+    "effectiveDate": "4/19/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 123
+   },
+   {
+    "company": "Merck Sharp & Dohme LLC",
+    "county": "Durham",
+    "city": "Durham",
+    "noticeNumber": "202600016",
+    "noticeDate": "2/24/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 7
+   },
+   {
+    "company": "Merck Sharp & Dohme LLC",
+    "county": "Durham",
+    "city": "Durham",
+    "noticeNumber": "202600016",
+    "noticeDate": "2/24/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 147
+   },
+   {
+    "company": "Focus Services, LLC",
+    "county": "Pitt",
+    "city": "Greenville",
+    "noticeNumber": "202600017",
+    "noticeDate": "2/16/2026",
+    "effectiveDate": "4/30/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 94
+   },
+   {
+    "company": "Fortrex",
+    "county": "Sampson",
+    "city": "Clinton",
+    "noticeNumber": "202600018",
+    "noticeDate": "3/2/2026",
+    "effectiveDate": "3/20/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 121
+   },
+   {
+    "company": "Prepac Manufacturing US LLC",
+    "county": "Guilford",
+    "city": "Whitsett",
+    "noticeNumber": "202600019",
+    "noticeDate": "3/3/2026",
+    "effectiveDate": "5/2/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 200
+   },
+   {
+    "company": "Saks & Company LLC",
+    "county": "Wake",
+    "city": "Raleigh",
+    "noticeNumber": "202600020",
+    "noticeDate": "3/6/2026",
+    "effectiveDate": "5/31/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 43
+   },
+   {
+    "company": "C2 Technologies",
+    "county": "N/A",
+    "city": "McLean VA",
+    "noticeNumber": "202600021",
+    "noticeDate": "3/2/2026",
+    "effectiveDate": "3/6/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 9
+   },
+   {
+    "company": "Kenco Logistic Services, LLC",
+    "county": "Mecklenburg",
+    "city": "Charlotte",
+    "noticeNumber": "202600022",
+    "noticeDate": "3/11/2026",
+    "effectiveDate": "5/17/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 86
+   },
+   {
+    "company": "Perdue Foods Feed Mill",
+    "county": "Hertford",
+    "city": "Cofield",
+    "noticeNumber": "202600023",
+    "noticeDate": "3/16/2026",
+    "effectiveDate": "4/19/2026",
+    "type": "Closure",
+    "permanence": "Temporary",
+    "affected": 104
+   },
+   {
+    "company": "Family Dollar",
+    "county": "Mecklenburg",
+    "city": "Matthews",
+    "noticeNumber": "202600024",
+    "noticeDate": "3/16/2026",
+    "effectiveDate": "8/12/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 373
+   },
+   {
+    "company": "Red Storm Entertainment, Inc.",
+    "county": "Wake",
+    "city": "Cary",
+    "noticeNumber": "202600025",
+    "noticeDate": "3/19/2026",
+    "effectiveDate": "9/18/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 105
+   },
+   {
+    "company": "AmeriPark LLC and Republic Parking System LLC dba Reimagined Parking",
+    "county": "Mecklenburg",
+    "city": "Charlotte",
+    "noticeNumber": "202600026",
+    "noticeDate": "3/20/2026",
+    "effectiveDate": "6/30/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 188
+   },
+   {
+    "company": "Epic Games, Inc.",
+    "county": "Wake",
+    "city": "Cary",
+    "noticeNumber": "202600027",
+    "noticeDate": "3/24/2026",
+    "effectiveDate": "3/27/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 211
+   },
+   {
+    "company": "ECU Health Home Health and Hospice",
+    "county": "Hertford",
+    "city": "Ahoskie",
+    "noticeNumber": "202600028",
+    "noticeDate": "3/19/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 4
+   },
+   {
+    "company": "ECU Health Home Health and Hospice",
+    "county": "Beaufort",
+    "city": "Washington",
+    "noticeNumber": "202600028",
+    "noticeDate": "3/19/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 10
+   },
+   {
+    "company": "ECU Health Home Health and Hospice",
+    "county": "Bertie",
+    "city": "Windsor",
+    "noticeNumber": "202600028",
+    "noticeDate": "3/19/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 14
+   },
+   {
+    "company": "ECU Health Home Health and Hospice",
+    "county": "Pitt",
+    "city": "Greenville",
+    "noticeNumber": "202600028",
+    "noticeDate": "3/19/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 35
+   },
+   {
+    "company": "ECU Health Home Health and Hospice",
+    "county": "Duplin",
+    "city": "Kenansville",
+    "noticeNumber": "202600028",
+    "noticeDate": "3/19/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 37
+   },
+   {
+    "company": "ECU Health Home Health and Hospice",
+    "county": "Pitt",
+    "city": "Greenville",
+    "noticeNumber": "202600028",
+    "noticeDate": "3/19/2026",
+    "effectiveDate": "5/1/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 61
+   },
+   {
+    "company": "Parkdale Mills",
+    "county": "Davidson",
+    "city": "Lexington",
+    "noticeNumber": "202600029",
+    "noticeDate": "4/9/2026",
+    "effectiveDate": "6/7/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 68
+   },
+   {
+    "company": "Compass Group USA Inc. dba Chartwells",
+    "county": "Orange",
+    "city": "Chapel Hill",
+    "noticeNumber": "202600030",
+    "noticeDate": "4/9/2026",
+    "effectiveDate": "6/12/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 91
+   },
+   {
+    "company": "Mars Petcare US, Inc.",
+    "county": "Vance",
+    "city": "Henderson",
+    "noticeNumber": "202600031",
+    "noticeDate": "4/20/2026",
+    "effectiveDate": "12/31/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 149
+   },
+   {
+    "company": "Vitacost.com, Inc.",
+    "county": "Davidson",
+    "city": "Lexington",
+    "noticeNumber": "202600032",
+    "noticeDate": "4/29/2026",
+    "effectiveDate": "7/1/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 130
+   },
+   {
+    "company": "Lions Services, Inc.",
+    "county": "Mecklenburg",
+    "city": "Charlotte",
+    "noticeNumber": "202600033",
+    "noticeDate": "5/1/2026",
+    "effectiveDate": "7/1/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 107
+   },
+   {
+    "company": "Republic National Distributing Company, LLC",
+    "county": "Wake",
+    "city": "Raleigh",
+    "noticeNumber": "202600034",
+    "noticeDate": "6/2/2026",
+    "effectiveDate": "9/29/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 14
+   },
+   {
+    "company": "Republic National Distributing Company, LLC",
+    "county": "Mecklenburg",
+    "city": "Charlotte",
+    "noticeNumber": "202600034",
+    "noticeDate": "6/2/2026",
+    "effectiveDate": "9/29/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 39
+   },
+   {
+    "company": "Down-Lite International, Inc.",
+    "county": "Union",
+    "city": "Monroe",
+    "noticeNumber": "202600035",
+    "noticeDate": "6/1/2026",
+    "effectiveDate": "8/14/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 113
+   },
+   {
+    "company": "DHL Supply Chain",
+    "county": "Forsyth",
+    "city": "Rural Hall",
+    "noticeNumber": "202600036",
+    "noticeDate": "6/5/2026",
+    "effectiveDate": "12/31/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 81
+   },
+   {
+    "company": "Ubisoft",
+    "county": "Wake",
+    "city": "Cary",
+    "noticeNumber": "202600037",
+    "noticeDate": "6/10/2026",
+    "effectiveDate": "8/10/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 17
+   },
+   {
+    "company": "Vestis Services, LLC",
+    "county": "N/A",
+    "city": "Lexington KY",
+    "noticeNumber": "202600038",
+    "noticeDate": "6/15/2026",
+    "effectiveDate": "8/17/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 1
+   },
+   {
+    "company": "Asensus Surgical, Inc.",
+    "county": "Wake",
+    "city": "Morrisville",
+    "noticeNumber": "202600039",
+    "noticeDate": "6/16/2026",
+    "effectiveDate": "3/31/2027",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 108
+   },
+   {
+    "company": "Carolina West Wireless",
+    "county": "Wilkes",
+    "city": "Wilkesboro",
+    "noticeNumber": "202600040",
+    "noticeDate": "6/24/2026",
+    "effectiveDate": "8/24/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 127
+   },
+   {
+    "company": "Conduent Commercial Solutions, LLC",
+    "county": "N/A",
+    "city": "Florham Park NJ",
+    "noticeNumber": "202600041",
+    "noticeDate": "6/26/2026",
+    "effectiveDate": "8/28/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 67
+   },
+   {
+    "company": "Barrette Outdoor Living, Inc.",
+    "county": "Rowan",
+    "city": "Salisbury",
+    "noticeNumber": "202600042",
+    "noticeDate": "7/1/2026",
+    "effectiveDate": "10/12/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 93
+   },
+   {
+    "company": "Electric Glass Fiber America, LLC",
+    "county": "Cleveland",
+    "city": "Shelby",
+    "noticeNumber": "202600043",
+    "noticeDate": "7/6/2026",
+    "effectiveDate": "9/30/2027",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 282
+   },
+   {
+    "company": "Frito Lay, Inc.",
+    "county": "Wake",
+    "city": "Raleigh",
+    "noticeNumber": "202600044",
+    "noticeDate": "7/6/2026",
+    "effectiveDate": "9/6/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 65
+   },
+   {
+    "company": "Elevate Textiles, Inc.",
+    "county": "Alamance",
+    "city": "Burlington",
+    "noticeNumber": "202600045",
+    "noticeDate": "7/22/2026",
+    "effectiveDate": "12/31/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 150
+   },
+   {
+    "company": "AVMAC LLC",
+    "county": "Onslow",
+    "city": "Jacksonville",
+    "noticeNumber": "202600046",
+    "noticeDate": "7/17/2026",
+    "effectiveDate": "8/23/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 62
+   },
+   {
+    "company": "Ryder",
+    "county": "Cumberland",
+    "city": "Fayetteville",
+    "noticeNumber": "202600047",
+    "noticeDate": "8/13/2026",
+    "effectiveDate": "10/12/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 73
+   },
+   {
+    "company": "Electrolux Consumer Products, Inc.",
+    "county": "Mecklenburg",
+    "city": "Charlotte",
+    "noticeNumber": "202600048",
+    "noticeDate": "9/10/2026",
+    "effectiveDate": "11/9/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 1
+   },
+   {
+    "company": "Bossong Hosiery Mills, Inc.",
+    "county": "Randolph",
+    "city": "Asheboro",
+    "noticeNumber": "202600049",
+    "noticeDate": "9/9/2026",
+    "effectiveDate": "9/9/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 122
+   },
+   {
+    "company": "Regional Acceptance Corporation",
+    "county": "Pitt",
+    "city": "Winterville",
+    "noticeNumber": "202600050",
+    "noticeDate": "9/15/2026",
+    "effectiveDate": "2/28/2027",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 156
+   },
+   {
+    "company": "Regional Acceptance Corporation",
+    "county": "Pitt",
+    "city": "Greenville",
+    "noticeNumber": "202600051",
+    "noticeDate": "9/15/2026",
+    "effectiveDate": "7/31/2027",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 97
+   },
+   {
+    "company": "Comfort First Heating & Cooling, LLC",
+    "county": "Lee",
+    "city": "Sanford",
+    "noticeNumber": "202600052",
+    "noticeDate": "9/16/2026",
+    "effectiveDate": "11/16/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 67
+   },
+   {
+    "company": "MasterBrand Cabinets LLC",
+    "county": "Lenoir",
+    "city": "Kinston",
+    "noticeNumber": "202600053",
+    "noticeDate": "9/28/2026",
+    "effectiveDate": "11/27/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 391
+   },
+   {
+    "company": "James River Management Company, Inc.",
+    "county": "N/A",
+    "city": "Richmond VA",
+    "noticeNumber": "202600054",
+    "noticeDate": "10/5/2026",
+    "effectiveDate": "11/30/2026",
+    "type": "Layoff",
+    "permanence": "Permanent",
+    "affected": 4
+   },
+   {
+    "company": "Pella Corporation",
+    "county": "Rockingham",
+    "city": "Reidsville",
+    "noticeNumber": "202600055",
+    "noticeDate": "10/15/2026",
+    "effectiveDate": "1/31/2027",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 133
+   },
+   {
+    "company": "FTGU, LLC",
+    "county": "Catawba",
+    "city": "Conover",
+    "noticeNumber": "202600056",
+    "noticeDate": "10/19/2026",
+    "effectiveDate": "12/16/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 93
+   },
+   {
+    "company": "Foster",
+    "county": "Pitt",
+    "city": "Greenville",
+    "noticeNumber": "202600057",
+    "noticeDate": "10/21/2026",
+    "effectiveDate": "3/5/2027",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 12
+   },
+   {
+    "company": "Foster",
+    "county": "Forsyth",
+    "city": "Winston Salem",
+    "noticeNumber": "202600057",
+    "noticeDate": "10/21/2026",
+    "effectiveDate": "3/5/2027",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 169
+   },
+   {
+    "company": "Sealy Mattress Manufacturing Company",
+    "county": "Randolph",
+    "city": "Trinity",
+    "noticeNumber": "202600058",
+    "noticeDate": "10/23/2026",
+    "effectiveDate": "12/31/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 114
+   },
+   {
+    "company": "Toter, LLC",
+    "county": "Iredell",
+    "city": "Statesville",
+    "noticeNumber": "202600059",
+    "noticeDate": "10/23/2026",
+    "effectiveDate": "12/22/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 15
+   },
+   {
+    "company": "Toter, LLC",
+    "county": "Iredell",
+    "city": "Statesville",
+    "noticeNumber": "202600059",
+    "noticeDate": "10/23/2026",
+    "effectiveDate": "12/22/2026",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 81
+   },
+   {
+    "company": "Mueller Systems, LLC",
+    "county": "Rowan",
+    "city": "Cleveland",
+    "noticeNumber": "202600060",
+    "noticeDate": "11/4/2026",
+    "effectiveDate": "3/31/2028",
+    "type": "Closure",
+    "permanence": "Permanent",
+    "affected": 70
+   }
+  ]
+ }
+}
