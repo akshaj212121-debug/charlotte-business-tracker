@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { Badge, Section, SourceLink, Stat } from "@/components/ui";
-import { companies, nonprofits, privateData, warnNotices } from "@/lib/data";
+import WhatChanged from "@/components/WhatChanged";
+import { companies, companiesGeneratedAt, CORE_COUNTIES, statewideNonprofits as nonprofits, privateData, warnNotices } from "@/lib/data";
 import { getIssues } from "@/lib/issues";
+import { getNews, toneFor } from "@/lib/news";
+import { latestChanges } from "@/lib/changes";
 import { date, int, money, pct, signedPct, tone } from "@/lib/format";
 
 function MiniTable({ head, rows }: { head: string[]; rows: (React.ReactNode)[][] }) {
@@ -27,6 +30,7 @@ function MiniTable({ head, rows }: { head: string[]; rows: (React.ReactNode)[][]
 
 export default function Home() {
   const issue = getIssues()[0];
+  const news = getNews().slice(0, 5);
   const withFin = companies.filter((c) => c.years[0]?.revenue != null);
   const totalRevenue = withFin.reduce((s, c) => s + (c.years[0].revenue ?? 0), 0);
   const npRevenue = nonprofits.reduce((s, n) => s + (n.filings[0]?.revenue ?? 0), 0);
@@ -37,6 +41,12 @@ export default function Home() {
   const growers = withFin.filter((c) => (c.years[0].revenue ?? 0) >= 1e8 && c.derived?.revenueGrowth != null)
     .sort((a, b) => (b.derived!.revenueGrowth ?? 0) - (a.derived!.revenueGrowth ?? 0)).slice(0, 5);
   const signals = companies.flatMap((c) => c.signals.map((f) => ({ c, f }))).sort((a, b) => b.f.date.localeCompare(a.f.date)).slice(0, 6);
+  const changes = latestChanges();
+  const local = companies.filter((c) => CORE_COUNTIES.includes(c.county ?? ""));
+  const localWarn = warnNotices.filter((w) => CORE_COUNTIES.includes(w.county));
+  const cutoff = new Date(Date.parse(companiesGeneratedAt) - 120 * 864e5).toISOString().slice(0, 10); // same window as /earnings
+  const season = companies.filter((c) => c.latestQuarter?.revenue != null && c.latestQuarter.prior?.revenue != null && c.latestQuarter.end >= cutoff)
+    .sort((a, b) => b.latestQuarter!.revenue! - a.latestQuarter!.revenue!).slice(0, 6);
 
   return (
     <>
@@ -49,12 +59,47 @@ export default function Home() {
         </Link>
       )}
 
+      {news.length > 0 && (
+        <Section title="Today’s news" href="/news" linkLabel="All news">
+          <ul className="divide-y divide-rule rounded-md border border-rule bg-card">
+            {news.map((n) => (
+              <li key={n.id} className="px-4 py-3">
+                <p className="text-xs text-muted num flex items-center gap-2">{date(n.date)} <Badge tone={toneFor(n.category)}>{n.category}</Badge></p>
+                <Link href={`/news/${n.id}`} className="block font-medium mt-0.5 hover:text-accent">{n.headline}</Link>
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 mt-8">
         <Stat label="Public companies" value={int(companies.length)} sub={`${int(withFin.length)} with filed financials`} />
         <Stat label="Their combined revenue" value={money(totalRevenue)} sub="Latest fiscal year" />
         <Stat label="Top-100 nonprofits" value={money(npRevenue)} sub="Revenue, latest 990s" />
         <Stat label={`Federal contracts ${completed}`} value={money(contractTotal)} sub="Top 100 NC recipients" />
         <Stat label="Workers in WARN notices" value={int(privateData.warn.totals.workersAffected)} sub={`${privateData.warn.year} to date`} />
+      </div>
+
+      {changes && !changes.baseline && <div className="mt-8"><WhatChanged changes={changes} limit={5} /></div>}
+
+      <div className="grid lg:grid-cols-2 gap-x-8">
+        <Section title="Charlotte: Mecklenburg + Union" href="/charlotte" linkLabel="Charlotte region">
+          <div className="grid grid-cols-2 gap-3">
+            <Stat label="Public companies" value={int(local.length)} sub={`${money(local.reduce((s, c) => s + (c.years[0]?.revenue ?? 0), 0))} combined revenue`} />
+            <Stat label={`Layoff notices ${privateData.warn.year}`} value={int(localWarn.length)} sub={`${int(localWarn.reduce((s, w) => s + w.affected, 0))} workers`} />
+          </div>
+        </Section>
+        <Section title="Latest quarterly results" href="/earnings" linkLabel="Earnings season">
+          <MiniTable
+            head={["Company", "Quarter", "Revenue", "vs yr ago"]}
+            rows={season.map((c) => [
+              <Link key="n" href={`/companies/${c.cik}`} className="font-medium hover:text-accent">{c.name}</Link>,
+              <span key="q" className="text-muted">{c.latestQuarter!.label}</span>,
+              money(c.latestQuarter!.revenue),
+              <span key="g" className={tone(c.latestQuarter!.revenueGrowth)}>{signedPct(c.latestQuarter!.revenueGrowth)}</span>,
+            ])}
+          />
+        </Section>
       </div>
 
       <Section title="Largest North Carolina public companies" href="/companies" linkLabel="All companies">

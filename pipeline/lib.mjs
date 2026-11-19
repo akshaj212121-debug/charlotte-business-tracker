@@ -8,7 +8,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const lastHit = {};
 
 // Fetch with an on-disk cache (default 25 days so the monthly run refreshes) and a per-host gap.
-export async function cachedFetch(url, key, { days = 25, gapMs = 500, method = 'GET', body, json = true } = {}) {
+export async function cachedFetch(url, key, { days = 25, gapMs = 500, method = 'GET', body, json = true, headers = {} } = {}) {
   const file = new URL(key, CACHE);
   try {
     const stat = await fs.stat(file);
@@ -24,7 +24,7 @@ export async function cachedFetch(url, key, { days = 25, gapMs = 500, method = '
     lastHit[host] = Date.now();
     const res = await fetch(url, {
       method,
-      headers: { 'User-Agent': UA, ...(body ? { 'Content-Type': 'application/json' } : {}) },
+      headers: { 'User-Agent': UA, ...(body ? { 'Content-Type': 'application/json' } : {}), ...headers },
       body: body ? JSON.stringify(body) : undefined,
     });
     if (res.status === 404) return null;

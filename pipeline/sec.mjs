@@ -6,7 +6,10 @@
 // (SEC asks for a contact in the User-Agent); falls back to a generic tool name.
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { displayName } from './lib.mjs';
+import { countyResolver } from './geo.mjs';
 
 try { process.loadEnvFile(new URL('../.env', import.meta.url)); } catch {}
 const UA = process.env.SEC_USER_AGENT || 'CharlotteBusinessTracker/1.0 (public-records research)';
@@ -127,8 +130,56 @@ export function buildFinancials(facts) {
   return { years, derived };
 }
 
+// ---------- latest quarter ----------
+// Three-month periods (80-100 days) from 10-Q/10-K XBRL, most recently filed value per period end.
+function quarterSeries(gaap, metric) {
+  const out = {};
+  for (const concept of CONCEPTS[metric]) {
+    const units = gaap?.[concept]?.units;
+    if (!units) continue;
+    const best = {};
+    for (const f of units.USD ?? units['USD/shares'] ?? []) {
+      if (!/^10-[QK]/.test(f.form ?? '') || !f.start) continue;
+      const days = (Date.parse(f.end) - Date.parse(f.start)) / 864e5;
+      if (days < 80 || days > 100) continue;
+      if (!best[f.end] || f.filed > best[f.end].filed) best[f.end] = f;
+    }
+    for (const [end, f] of Object.entries(best)) if (!(end in out)) out[end] = f;
+  }
+  return out;
+}
+
+// Latest reported quarter plus the same quarter one year earlier (both usually sit in the same 10-Q).
+export function buildLatestQuarter(facts) {
+  const gaap = facts?.facts?.['us-gaap'];
+  if (!gaap) return null;
+  const s = Object.fromEntries(['revenue', 'netInterestIncome', 'noninterestIncome', 'netIncome', 'epsDiluted'].map((m) => [m, quarterSeries(gaap, m)]));
+  const revenueAt = (end) => {
+    if (s.revenue[end]) return { val: s.revenue[end].val, calc: false };
+    const nii = s.netInterestIncome[end], non = s.noninterestIncome[end];
+    return nii && non ? { val: nii.val + non.val, calc: true } : null;
+  };
+  const ends = [...new Set([...Object.keys(s.revenue), ...Object.keys(s.netIncome), ...Object.keys(s.netInterestIncome)])].sort();
+  const end = ends.at(-1);
+  if (!end) return null;
+  const priorEnd = ends.find((e) => { const d = (Date.parse(end) - Date.parse(e)) / 864e5; return d >= 355 && d <= 375; }) ?? null;
+  const anchor = s.netIncome[end] ?? s.revenue[end] ?? s.netInterestIncome[end];
+  const cur = { revenue: revenueAt(end), netIncome: s.netIncome[end]?.val ?? null, eps: s.epsDiluted[end]?.val ?? null };
+  const prev = priorEnd ? { revenue: revenueAt(priorEnd), netIncome: s.netIncome[priorEnd]?.val ?? null, eps: s.epsDiluted[priorEnd]?.val ?? null } : null;
+  const growth = (a, b) => (a == null || b == null || b === 0 ? null : (a - b) / Math.abs(b));
+  return {
+    end, start: anchor.start, filed: anchor.filed, form: anchor.form, accn: anchor.accn,
+    label: `${anchor.fp === 'FY' ? 'Q4' : anchor.fp} FY${anchor.fy}`,
+    revenue: cur.revenue?.val ?? null, revenueCalc: cur.revenue?.calc ?? false,
+    netIncome: cur.netIncome, epsDiluted: cur.eps,
+    prior: prev ? { end: priorEnd, revenue: prev.revenue?.val ?? null, netIncome: prev.netIncome, epsDiluted: prev.eps } : null,
+    revenueGrowth: prev ? growth(cur.revenue?.val, prev.revenue?.val) : null,
+    netIncomeGrowth: prev ? growth(cur.netIncome, prev.netIncome) : null,
+  };
+}
+
 // ---------- filings / signals ----------
-const ITEM_LABELS = {
+export const ITEM_LABELS = {
   '1.01': 'Entered material agreement', '1.02': 'Terminated material agreement', '1.03': 'Bankruptcy or receivership',
   '2.01': 'Completed acquisition or sale of assets', '2.02': 'Results of operations', '2.03': 'New debt obligation',
   '2.05': 'Exit or restructuring costs', '2.06': 'Asset impairment', '3.01': 'Delisting notice',
@@ -136,7 +187,7 @@ const ITEM_LABELS = {
   '4.01': 'Auditor change', '4.02': 'Prior financials no longer reliable', '5.01': 'Change in control', '5.02': 'Executive or director change', '5.03': 'Charter or bylaw amendment',
   '5.07': 'Shareholder vote results', '7.01': 'Regulation FD disclosure', '8.01': 'Other events',
 };
-const DISTRESS_ITEMS = new Set(['1.03', '2.05', '2.06', '3.01', '4.02']);
+export const DISTRESS_ITEMS = new Set(['1.03', '2.05', '2.06', '3.01', '4.02']);
 const KEEP_FORMS = new Set(['10-K', '10-K/A', '10-Q', '8-K', '8-K/A', 'DEF 14A', '20-F', 'S-1', '15-12G', '25-NSE']);
 
 function recentFilings(sub, sinceIso) {
@@ -185,12 +236,28 @@ async function main() {
   console.log(`NC registrants: ${nc.length}. Pulling financials...`);
 
   const since = new Date(Date.now() - 180 * 864e5).toISOString().slice(0, 10);
+  const resolveCounty = await countyResolver();
   const companies = [];
   for (const sub of nc) {
     const facts = await getJson(`https://data.sec.gov/api/xbrl/companyfacts/CIK${pad(sub.cik)}.json`, `facts-${Number(sub.cik)}.json`).catch(() => null);
     const { years, derived } = buildFinancials(facts);
     const filings = recentFilings(sub, since);
     const b = sub.addresses.business;
+    const latestQuarter = buildLatestQuarter(facts);
+    if (latestQuarter) { // link straight to the 10-Q/10-K document when it is in the recent-filings index
+      const r = sub.filings.recent, i = r.accessionNumber.indexOf(latestQuarter.accn);
+      latestQuarter.url = i >= 0
+        ? `https://www.sec.gov/Archives/edgar/data/${Number(sub.cik)}/${r.accessionNumber[i].replace(/-/g, '')}/${r.primaryDocument[i]}`
+        : `https://www.sec.gov/Archives/edgar/data/${Number(sub.cik)}/${latestQuarter.accn.replace(/-/g, '')}/`;
+    }
+    const geo = resolveCounty(b.zipCode, b.city);
+    // SEC's companyfacts feed sometimes lags a filing (e.g. Duke Energy, Q2-Q3 2026). Flag a 10-Q/10-K
+    // whose report period is newer than the structured data, so pages link to it instead of implying it's missing.
+    const rr = sub.filings.recent;
+    const li = rr.form.findIndex((f) => /^10-[QK]$/.test(f));
+    const newestReport = li >= 0 ? { form: rr.form[li], reportDate: rr.reportDate[li], filed: rr.filingDate[li], url: `https://www.sec.gov/Archives/edgar/data/${Number(sub.cik)}/${rr.accessionNumber[li].replace(/-/g, '')}/${rr.primaryDocument[li]}` } : null;
+    const covered = newestReport?.form === '10-K' ? years[0]?.end : latestQuarter?.end; // a 10-K is covered by annual data
+    const pendingReport = newestReport && (!covered || Date.parse(newestReport.reportDate) - Date.parse(covered) > 45 * 864e5) ? newestReport : null; // 45d: some filers mis-state the report date
     companies.push({
       cik: Number(sub.cik),
       name: displayName(sub.name),
@@ -201,6 +268,11 @@ async function main() {
       industry: sub.sicDescription,
       city: (b.city || '').replace(/\b\w/g, (c) => c.toUpperCase()).replace(/\B\w/g, (c) => c.toLowerCase()),
       state: b.stateOrCountry,
+      zip: (b.zipCode || '').slice(0, 5) || null,
+      county: geo?.county ?? null,
+      countyFrom: geo?.from ?? null,
+      latestQuarter,
+      pendingReport,
       fiscalYearEnd: sub.fiscalYearEnd,
       filerCategory: sub.category,
       website: sub.website || null,
@@ -253,8 +325,29 @@ function selfTest() {
   assert.equal(bank.years[0].revenue, 100);
   assert.equal(bank.years[0].revenueCalc, true);
   assert.equal(years[0].revenueCalc, false);
+  // Latest quarter: 3-month facts only (YTD and annual ignored), YoY from the same quarter a year earlier.
+  const q = buildLatestQuarter({ facts: { 'us-gaap': {
+    Revenues: { units: { USD: [
+      { ...fact(50, '2026-07-01', '2026-09-30', '2026-10-30', '10-Q'), fy: 2026, fp: 'Q3', accn: 'A2' },
+      { ...fact(140, '2026-01-01', '2026-09-30', '2026-10-30', '10-Q'), fy: 2026, fp: 'Q3', accn: 'A2' },
+      { ...fact(40, '2025-07-01', '2025-09-30', '2026-10-30', '10-Q'), fy: 2026, fp: 'Q3', accn: 'A2' },
+    ] } },
+    NetIncomeLoss: { units: { USD: [
+      { ...fact(5, '2026-07-01', '2026-09-30', '2026-10-30', '10-Q'), fy: 2026, fp: 'Q3', accn: 'A2' },
+      { ...fact(-5, '2025-07-01', '2025-09-30', '2026-10-30', '10-Q'), fy: 2026, fp: 'Q3', accn: 'A2' },
+    ] } },
+  } } });
+  assert.equal(q.end, '2026-09-30');
+  assert.equal(q.label, 'Q3 FY2026');
+  assert.equal(q.revenue, 50, 'YTD value must not be used');
+  assert.equal(q.prior.revenue, 40);
+  assert.equal(q.revenueGrowth, 0.25);
+  assert.equal(q.netIncomeGrowth, 2, 'growth vs a loss uses its absolute value');
   console.log('sec.mjs self-test passed');
 }
 
-if (process.argv.includes('--test')) selfTest();
-else await main();
+// Run only when executed directly (update.mjs imports this module for buildLatestQuarter).
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  if (process.argv.includes('--test')) selfTest();
+  else await main();
+}

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T22:25:37.392Z",
+ "generatedAt": "2026-11-19T20:38:31.094Z",
  "source": "USAspending.gov API; NC Department of Commerce WARN summary list",
  "fiscalYears": {
   "completed": "FY2026",
@@ -1008,6 +1008,412 @@
    "source": "https://www.usaspending.gov/recipient/abc92d65-54f6-9b44-dac9-48e86c1ab3d1-C/latest"
   }
  ],
+ "localContractors": {
+  "Mecklenburg": [
+   {
+    "name": "Orano Federal Services LLC",
+    "recipientId": "672134e5-1420-82f2-0227-283f296d94c6-C",
+    "FY2026": 899781011.31,
+    "FY2025": 500000,
+    "growth": 1798.5620226199999,
+    "source": "https://www.usaspending.gov/recipient/672134e5-1420-82f2-0227-283f296d94c6-C/latest"
+   },
+   {
+    "name": "Chemring Sensors and Electronic Systems, Inc.",
+    "recipientId": "cd7a7d2f-7dad-2dd4-cdbb-25c6b0a03282-C",
+    "FY2026": 55823910.89,
+    "FY2025": 16457196.17,
+    "growth": 2.3920669300741526,
+    "source": "https://www.usaspending.gov/recipient/cd7a7d2f-7dad-2dd4-cdbb-25c6b0a03282-C/latest"
+   },
+   {
+    "name": "Burlington Industries LLC",
+    "recipientId": "0dc1f06c-dc34-d9c9-f9de-a51900c19ae4-C",
+    "FY2026": 42482034.79,
+    "FY2025": 125937780,
+    "growth": -0.6626744191457083,
+    "source": "https://www.usaspending.gov/recipient/0dc1f06c-dc34-d9c9-f9de-a51900c19ae4-C/latest"
+   },
+   {
+    "name": "A.M.S. Network, LLC",
+    "recipientId": "1ab79c5f-a364-0733-1dbf-7e93a5755123-C",
+    "FY2026": 26419331.36,
+    "FY2025": 33666836.23,
+    "growth": -0.21527133765963605,
+    "source": "https://www.usaspending.gov/recipient/1ab79c5f-a364-0733-1dbf-7e93a5755123-C/latest"
+   },
+   {
+    "name": "Premier Healthcare Solutions, Inc",
+    "recipientId": "f62054d0-80a8-d126-248c-680129268bf6-C",
+    "FY2026": 22282499.04,
+    "FY2025": 9932579.5,
+    "growth": 1.2433748494034202,
+    "source": "https://www.usaspending.gov/recipient/f62054d0-80a8-d126-248c-680129268bf6-C/latest"
+   },
+   {
+    "name": "Dot Construction, Inc",
+    "recipientId": "5849f017-b33f-1cf2-fa37-8a7adbbf7b04-C",
+    "FY2026": 16336476.3,
+    "FY2025": 16485244.57,
+    "growth": -0.009024328960865368,
+    "source": "https://www.usaspending.gov/recipient/5849f017-b33f-1cf2-fa37-8a7adbbf7b04-C/latest"
+   },
+   {
+    "name": "Veteran Office Design, LLC",
+    "recipientId": "99a15893-82e8-4f29-7982-f2a253e79764-C",
+    "FY2026": 14036603.26,
+    "FY2025": 17538136.14,
+    "growth": -0.1996525087984635,
+    "source": "https://www.usaspending.gov/recipient/99a15893-82e8-4f29-7982-f2a253e79764-C/latest"
+   },
+   {
+    "name": "The Remi Group LLC",
+    "recipientId": "34df9309-72a6-43ad-a834-b82179dbf8b8-C",
+    "FY2026": 13108757.51,
+    "FY2025": 11883816.89,
+    "growth": 0.10307636269881966,
+    "source": "https://www.usaspending.gov/recipient/34df9309-72a6-43ad-a834-b82179dbf8b8-C/latest"
+   },
+   {
+    "name": "Andritz Hydro Corp",
+    "recipientId": "2c6116eb-1bf4-a15f-5152-66bfb6e67516-C",
+    "FY2026": 12839598.48,
+    "FY2025": 14359156.6,
+    "growth": -0.10582502596287578,
+    "source": "https://www.usaspending.gov/recipient/2c6116eb-1bf4-a15f-5152-66bfb6e67516-C/latest"
+   },
+   {
+    "name": "Clark Nexsen/ Michael Baker Jv",
+    "recipientId": "4e11d8e8-7a36-cb8c-fc04-f77ac059f3b1-C",
+    "FY2026": 12144416,
+    "FY2025": 12781439.16,
+    "growth": -0.0498397052182972,
+    "source": "https://www.usaspending.gov/recipient/4e11d8e8-7a36-cb8c-fc04-f77ac059f3b1-C/latest"
+   },
+   {
+    "name": "Interdyne Corp",
+    "recipientId": "9f57d18c-c597-ccba-608d-421b4f55a107-C",
+    "FY2026": 11061175.8,
+    "FY2025": 11000107.03,
+    "growth": 0.0055516523460591655,
+    "source": "https://www.usaspending.gov/recipient/9f57d18c-c597-ccba-608d-421b4f55a107-C/latest"
+   },
+   {
+    "name": "Msc Industrial Direct Co., Inc.",
+    "recipientId": "7744b5c5-f209-3968-22b6-87f1698287fd-C",
+    "FY2026": 10124715.45,
+    "FY2025": 94549042.13,
+    "growth": -0.892915726887227,
+    "source": "https://www.usaspending.gov/recipient/7744b5c5-f209-3968-22b6-87f1698287fd-C/latest"
+   },
+   {
+    "name": "Maat Enterprises Inc",
+    "recipientId": "ad936bd2-bf99-53d2-0e73-523acdef6def-C",
+    "FY2026": 9588023.76,
+    "FY2025": 3669066.76,
+    "growth": 1.6132050429085134,
+    "source": "https://www.usaspending.gov/recipient/ad936bd2-bf99-53d2-0e73-523acdef6def-C/latest"
+   },
+   {
+    "name": "Piedmont Natural Gas Company, Inc.",
+    "recipientId": "c3a36777-aaad-52c8-5055-76ebca1d7e3f-C",
+    "FY2026": 9009003.7,
+    "FY2025": 7636964.4,
+    "growth": 0.17965767916896389,
+    "source": "https://www.usaspending.gov/recipient/c3a36777-aaad-52c8-5055-76ebca1d7e3f-C/latest"
+   },
+   {
+    "name": "Dentsply North America LLC",
+    "recipientId": "aa0ccf3d-799d-12b0-c6fe-b9af31086dd3-C",
+    "FY2026": 7760096.02,
+    "FY2025": 692750.9,
+    "growth": 10.201856280518724,
+    "source": "https://www.usaspending.gov/recipient/aa0ccf3d-799d-12b0-c6fe-b9af31086dd3-C/latest"
+   },
+   {
+    "name": "H D Cw Joint Venture, the",
+    "recipientId": "88dccc68-fb63-43fe-146e-b452904c752f-C",
+    "FY2026": 6393900.34,
+    "FY2025": 3859180.11,
+    "growth": 0.6568027813555455,
+    "source": "https://www.usaspending.gov/recipient/88dccc68-fb63-43fe-146e-b452904c752f-C/latest"
+   },
+   {
+    "name": "American National Red Cross, the",
+    "recipientId": "a375f105-597b-1639-8189-363ae0c09d4d-C",
+    "FY2026": 5964175.66,
+    "FY2025": 7336215.52,
+    "growth": -0.18702283980882822,
+    "source": "https://www.usaspending.gov/recipient/a375f105-597b-1639-8189-363ae0c09d4d-C/latest"
+   },
+   {
+    "name": "Hearst Media Production Group LLC",
+    "recipientId": "4a928ae0-908b-de20-966c-e6375fbf2d82-C",
+    "FY2026": 5590000,
+    "FY2025": null,
+    "growth": null,
+    "source": "https://www.usaspending.gov/recipient/4a928ae0-908b-de20-966c-e6375fbf2d82-C/latest"
+   },
+   {
+    "name": "Forms & Supply, Inc.",
+    "recipientId": "a4cb668f-c209-c57f-0da8-ee078b442802-C",
+    "FY2026": 4223619.51,
+    "FY2025": 9062378.49,
+    "growth": -0.5339391844358953,
+    "source": "https://www.usaspending.gov/recipient/a4cb668f-c209-c57f-0da8-ee078b442802-C/latest"
+   },
+   {
+    "name": "Naturally Brand Inc",
+    "recipientId": "ee7923a9-47c3-43ec-c0a7-4ee81db0fee6-C",
+    "FY2026": 4117904.53,
+    "FY2025": 4915697.3,
+    "growth": -0.16229493423038885,
+    "source": "https://www.usaspending.gov/recipient/ee7923a9-47c3-43ec-c0a7-4ee81db0fee6-C/latest"
+   },
+   {
+    "name": "Combat Medical Systems LLC",
+    "recipientId": "8973731f-36cb-67b7-45ca-24b5ccc4156e-C",
+    "FY2026": 3678378.7,
+    "FY2025": 2202333.62,
+    "growth": 0.670218656517626,
+    "source": "https://www.usaspending.gov/recipient/8973731f-36cb-67b7-45ca-24b5ccc4156e-C/latest"
+   },
+   {
+    "name": "Jctm LLC",
+    "recipientId": "8ce4d6e2-01a4-3d52-23c1-13a1c0d7dd62-C",
+    "FY2026": 3233216.91,
+    "FY2025": 4014151.57,
+    "growth": -0.19454538434382032,
+    "source": "https://www.usaspending.gov/recipient/8ce4d6e2-01a4-3d52-23c1-13a1c0d7dd62-C/latest"
+   },
+   {
+    "name": "Morris South, LLC",
+    "recipientId": "6e679278-5a77-3be3-09c7-c3eb3096272e-C",
+    "FY2026": 3229192.06,
+    "FY2025": 581355.03,
+    "growth": 4.554595545513728,
+    "source": "https://www.usaspending.gov/recipient/6e679278-5a77-3be3-09c7-c3eb3096272e-C/latest"
+   },
+   {
+    "name": "Atz Solution LLC",
+    "recipientId": "7f34eee7-8ceb-4a84-5e87-5679552b3e28-C",
+    "FY2026": 3185166.59,
+    "FY2025": 564993.45,
+    "growth": 4.637528346567557,
+    "source": "https://www.usaspending.gov/recipient/7f34eee7-8ceb-4a84-5e87-5679552b3e28-C/latest"
+   },
+   {
+    "name": "Nexus Group, LLC",
+    "recipientId": "46d68a3e-900e-c30f-36a1-23eb7acd11db-C",
+    "FY2026": 3074612.95,
+    "FY2025": 2398891.55,
+    "growth": 0.28168067872847374,
+    "source": "https://www.usaspending.gov/recipient/46d68a3e-900e-c30f-36a1-23eb7acd11db-C/latest"
+   }
+  ],
+  "Union": [
+   {
+    "name": "Scott Technologies, Inc.",
+    "recipientId": "1aa2628c-1397-0a64-42fc-579340cc3882-C",
+    "FY2026": 10294071.79,
+    "FY2025": 28200346.42,
+    "growth": -0.6349664774791799,
+    "source": "https://www.usaspending.gov/recipient/1aa2628c-1397-0a64-42fc-579340cc3882-C/latest"
+   },
+   {
+    "name": "Circor Pumps North America LLC",
+    "recipientId": "290f1ecd-bc67-8d3a-45f5-5154f194e6dc-C",
+    "FY2026": 4455504.27,
+    "FY2025": 4290269.5,
+    "growth": 0.03851384394383606,
+    "source": "https://www.usaspending.gov/recipient/290f1ecd-bc67-8d3a-45f5-5154f194e6dc-C/latest"
+   },
+   {
+    "name": "Oro Manufacturing Co",
+    "recipientId": "8efdd893-d581-b1fa-2fba-5f6356796603-C",
+    "FY2026": 3587925.2,
+    "FY2025": 2232078.49,
+    "growth": 0.6074368424203577,
+    "source": "https://www.usaspending.gov/recipient/8efdd893-d581-b1fa-2fba-5f6356796603-C/latest"
+   },
+   {
+    "name": "Golden Tech Systems Inc",
+    "recipientId": "8429b1e9-42e9-f005-96b3-bc799071dfc7-C",
+    "FY2026": 2165318.36,
+    "FY2025": 3611648.91,
+    "growth": -0.4004626656803139,
+    "source": "https://www.usaspending.gov/recipient/8429b1e9-42e9-f005-96b3-bc799071dfc7-C/latest"
+   },
+   {
+    "name": "Cem Corporation",
+    "recipientId": "b52b9f65-e451-a944-bdc0-bf270054d989-C",
+    "FY2026": 1379668.49,
+    "FY2025": 782919.88,
+    "growth": 0.7622090398317641,
+    "source": "https://www.usaspending.gov/recipient/b52b9f65-e451-a944-bdc0-bf270054d989-C/latest"
+   },
+   {
+    "name": "Assa Abloy Entrance Systems Us Inc.",
+    "recipientId": "a2901b18-d66c-8f09-9e94-6310b9ad4ee3-C",
+    "FY2026": 964531.08,
+    "FY2025": 1922176.21,
+    "growth": -0.49820881406080875,
+    "source": "https://www.usaspending.gov/recipient/a2901b18-d66c-8f09-9e94-6310b9ad4ee3-C/latest"
+   },
+   {
+    "name": "Rapier Solutions, Inc.",
+    "recipientId": "2c54b3e9-d2a8-8954-2059-93f997a67e52-C",
+    "FY2026": 928473.16,
+    "FY2025": 2815419.48,
+    "growth": -0.6702185352500295,
+    "source": "https://www.usaspending.gov/recipient/2c54b3e9-d2a8-8954-2059-93f997a67e52-C/latest"
+   },
+   {
+    "name": "Veteran Mobility Solutions LLC",
+    "recipientId": "bb19d097-9d4d-f3c3-a8f5-a762955a32bd-C",
+    "FY2026": 391636.95,
+    "FY2025": 205969.31,
+    "growth": 0.9014335193917968,
+    "source": "https://www.usaspending.gov/recipient/bb19d097-9d4d-f3c3-a8f5-a762955a32bd-C/latest"
+   },
+   {
+    "name": "Mdm Mac Enterprises Inc",
+    "recipientId": "e260b4aa-57fd-3703-2a6d-cc5748a4f440-C",
+    "FY2026": 361911.96,
+    "FY2025": 3261136.34,
+    "growth": -0.8890227447528305,
+    "source": "https://www.usaspending.gov/recipient/e260b4aa-57fd-3703-2a6d-cc5748a4f440-C/latest"
+   },
+   {
+    "name": "Hgc Noise Vibration Acoustics, Inc.",
+    "recipientId": "fed2aeff-4f1a-a3f4-f666-979b4d47031c-C",
+    "FY2026": 311400,
+    "FY2025": null,
+    "growth": null,
+    "source": "https://www.usaspending.gov/recipient/fed2aeff-4f1a-a3f4-f666-979b4d47031c-C/latest"
+   },
+   {
+    "name": "Bay Solutions LLC",
+    "recipientId": "70c8d806-4147-9b25-eb08-efb2f5c19d1a-C",
+    "FY2026": 219000,
+    "FY2025": null,
+    "growth": null,
+    "source": "https://www.usaspending.gov/recipient/70c8d806-4147-9b25-eb08-efb2f5c19d1a-C/latest"
+   },
+   {
+    "name": "Equipment & Supply Inc",
+    "recipientId": "c990f18b-f1dc-1468-3928-4e60470dfc47-C",
+    "FY2026": 215654.78,
+    "FY2025": 1061011.25,
+    "growth": -0.796746000572567,
+    "source": "https://www.usaspending.gov/recipient/c990f18b-f1dc-1468-3928-4e60470dfc47-C/latest"
+   },
+   {
+    "name": "Production Speed Fixtures, LLC",
+    "recipientId": "fb54ca00-5424-e4a1-f17d-937ffa332a00-C",
+    "FY2026": 202725,
+    "FY2025": -4161.19,
+    "growth": 49.71803498518453,
+    "source": "https://www.usaspending.gov/recipient/fb54ca00-5424-e4a1-f17d-937ffa332a00-C/latest"
+   },
+   {
+    "name": "Premier Trading Company, LLC",
+    "recipientId": "c7de78ad-88a1-afba-79da-c3fb963e214a-C",
+    "FY2026": 194664,
+    "FY2025": 123256,
+    "growth": 0.5793470500421886,
+    "source": "https://www.usaspending.gov/recipient/c7de78ad-88a1-afba-79da-c3fb963e214a-C/latest"
+   },
+   {
+    "name": "Carolina Ramp Solutions, LLC",
+    "recipientId": "31d4543a-d4de-f66a-927a-74c70d3852c8-C",
+    "FY2026": 106591,
+    "FY2025": 253842.19,
+    "growth": -0.5800895036400372,
+    "source": "https://www.usaspending.gov/recipient/31d4543a-d4de-f66a-927a-74c70d3852c8-C/latest"
+   },
+   {
+    "name": "Industrial Alloys Inc",
+    "recipientId": "d5410efd-09e5-b90b-2700-8fed2d30e5bc-C",
+    "FY2026": 94980.84,
+    "FY2025": 227527.22,
+    "growth": -0.5825517491929098,
+    "source": "https://www.usaspending.gov/recipient/d5410efd-09e5-b90b-2700-8fed2d30e5bc-C/latest"
+   },
+   {
+    "name": "Stage Zero Shooting Supply LLC",
+    "recipientId": "defbbbe0-fad2-1341-4d36-399dda8c1c66-C",
+    "FY2026": 82000,
+    "FY2025": null,
+    "growth": null,
+    "source": "https://www.usaspending.gov/recipient/defbbbe0-fad2-1341-4d36-399dda8c1c66-C/latest"
+   },
+   {
+    "name": "Goodrich Corporation",
+    "recipientId": "06fe4c4b-f38d-ca1f-94db-0e1890a6f185-C",
+    "FY2026": 72168.56,
+    "FY2025": 0,
+    "growth": null,
+    "source": "https://www.usaspending.gov/recipient/06fe4c4b-f38d-ca1f-94db-0e1890a6f185-C/latest"
+   },
+   {
+    "name": "Casa Fiora LLC",
+    "recipientId": "d8569a97-2e93-f484-1f66-106610f013af-C",
+    "FY2026": 35934.54,
+    "FY2025": 13297.5,
+    "growth": 1.7023530738860688,
+    "source": "https://www.usaspending.gov/recipient/d8569a97-2e93-f484-1f66-106610f013af-C/latest"
+   },
+   {
+    "name": "Us - Belway LLC",
+    "recipientId": "e65cf946-7096-20fb-4806-45c1ab6dbda0-C",
+    "FY2026": 30380,
+    "FY2025": 28167,
+    "growth": 0.07856711754890475,
+    "source": "https://www.usaspending.gov/recipient/e65cf946-7096-20fb-4806-45c1ab6dbda0-C/latest"
+   },
+   {
+    "name": "Cyril Bath Company",
+    "recipientId": "df1444c2-a341-60bf-40b8-e383262dd1d0-C",
+    "FY2026": 17500,
+    "FY2025": 17500,
+    "growth": 0,
+    "source": "https://www.usaspending.gov/recipient/df1444c2-a341-60bf-40b8-e383262dd1d0-C/latest"
+   },
+   {
+    "name": "Elite National LLP",
+    "recipientId": "b871f667-94c9-9cd6-16cc-315f92db35cc-C",
+    "FY2026": 10068.26,
+    "FY2025": null,
+    "growth": null,
+    "source": "https://www.usaspending.gov/recipient/b871f667-94c9-9cd6-16cc-315f92db35cc-C/latest"
+   },
+   {
+    "name": "Utd Technology Corp",
+    "recipientId": "61e1dfb6-e416-38a3-2232-b0b9db4817e9-C",
+    "FY2026": 9865.91,
+    "FY2025": null,
+    "growth": null,
+    "source": "https://www.usaspending.gov/recipient/61e1dfb6-e416-38a3-2232-b0b9db4817e9-C/latest"
+   },
+   {
+    "name": "Greiner Bio-One North America, Inc",
+    "recipientId": "3cf32f1f-1d98-93a9-6a34-1b2bad55fcb7-C",
+    "FY2026": 0,
+    "FY2025": 39369.55,
+    "growth": -1,
+    "source": "https://www.usaspending.gov/recipient/3cf32f1f-1d98-93a9-6a34-1b2bad55fcb7-C/latest"
+   },
+   {
+    "name": "Aqua Logic, Inc.",
+    "recipientId": "6c9f2fda-7d21-40da-445d-c84a82bf6d05-C",
+    "FY2026": 0,
+    "FY2025": 80113,
+    "growth": -1,
+    "source": "https://www.usaspending.gov/recipient/6c9f2fda-7d21-40da-445d-c84a82bf6d05-C/latest"
+   }
+  ]
+ },
  "newAwards": [
   {
    "recipient": "Peachtree Lumber Company, Inc",

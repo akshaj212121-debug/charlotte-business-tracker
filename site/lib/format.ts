@@ -46,7 +46,7 @@ export function fiscalYear(endIso: string): string {
   return `FY ${endIso.slice(0, 4)}`;
 }
 
-export type FormatKind = "money" | "pct" | "signedPct" | "int" | "text" | "date";
+export type FormatKind = "money" | "pct" | "signedPct" | "int" | "text" | "date" | "perShare";
 
 export function formatValue(kind: FormatKind, v: unknown): string {
   if (v == null || v === "") return "—";
@@ -56,6 +56,7 @@ export function formatValue(kind: FormatKind, v: unknown): string {
     case "signedPct": return signedPct(v as number);
     case "int": return int(v as number);
     case "date": return date(v as string);
+    case "perShare": return perShare(v as number);
     default: return String(v);
   }
 }

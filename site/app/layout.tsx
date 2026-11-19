@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif4" });
@@ -9,11 +10,16 @@ const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif4" });
 export const metadata: Metadata = {
   title: { default: "Charlotte Business Tracker — North Carolina Financial Hub", template: "%s · Charlotte Business Tracker" },
   description: "Public-record financial profiles of North Carolina companies, nonprofits, federal contractors and layoffs. Every figure linked to its source filing. Updated monthly.",
+  metadataBase: new URL(SITE_URL),
+  alternates: { types: { "application/rss+xml": [{ url: "/feed.xml", title: "Charlotte Business Tracker newsletter" }] } },
 };
 
 const NAV = [
+  { href: "/news", label: "News" },
   { href: "/issues", label: "Newsletter" },
+  { href: "/charlotte", label: "Charlotte" },
   { href: "/companies", label: "Public companies" },
+  { href: "/earnings", label: "Earnings" },
   { href: "/nonprofits", label: "Nonprofits" },
   { href: "/contracts", label: "Federal contracts" },
   { href: "/layoffs", label: "Layoffs" },
@@ -49,7 +55,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               NC Department of Commerce. Each profile links to its source. Private companies are not required to publish
               financials, and this site never estimates them. <Link href="/methodology" className="underline">How this works</Link>.
             </p>
-            <p>Not investment advice. Figures are as filed and may be restated later by the filer.</p>
+            <p>Not investment advice. Figures are as filed and may be restated later by the filer. <a href="/feed.xml" className="underline">RSS feed</a>.</p>
           </div>
         </footer>
       </body>

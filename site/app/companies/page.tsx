@@ -24,6 +24,7 @@ export default function CompaniesPage() {
     ticker: c.tickers[0] ?? null,
     allTickers: c.tickers.join(" "), // searchable, not displayed (preferreds, other share classes)
     city: c.city,
+    county: c.county,
     industry: c.industry,
     revenue: c.years[0]?.revenue ?? null,
     revenueGrowth: c.derived?.revenueGrowth ?? null,
@@ -39,7 +40,7 @@ export default function CompaniesPage() {
         Every company registered with the SEC whose headquarters address is in North Carolina, with financials taken
         straight from the structured data in their annual reports. Data pulled {date(companiesGeneratedAt)}.
       </PageTitle>
-      <SortableTable columns={columns} rows={rows} searchKeys={["name", "allTickers", "city", "industry"]} initialSort="revenue" placeholder="Search company, ticker, city or industry" />
+      <SortableTable columns={columns} rows={rows} searchKeys={["name", "allTickers", "city", "county", "industry"]} initialSort="revenue" placeholder="Search company, ticker, city, county or industry" />
     </>
   );
 }

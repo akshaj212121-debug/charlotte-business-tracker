@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { BUTTONDOWN_USERNAME } from "./lib/site";
 
 // Fully static public-data site: no user input, no cookies, no third-party scripts.
 // Next's hydration uses inline scripts, and a nonce CSP would force every page to render
@@ -13,7 +14,7 @@ const csp = [
   `connect-src 'self'${isDev ? " ws:" : ""}`,
   "frame-ancestors 'none'",
   "base-uri 'self'",
-  "form-action 'self'",
+  `form-action 'self'${BUTTONDOWN_USERNAME ? " https://buttondown.com" : ""}`, // email signup posts to Buttondown once configured
   "object-src 'none'",
 ].join("; ");
 

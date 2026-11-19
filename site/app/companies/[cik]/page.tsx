@@ -46,16 +46,38 @@ export default async function CompanyPage({ params }: { params: Promise<{ cik: s
   if (!c) notFound();
   const cur = c.years[0];
   const d = c.derived;
+  const q = c.latestQuarter;
   const sentence = snapshot(c);
 
   return (
     <article>
       <PageTitle kicker={[c.tickers[0], [...new Set(c.exchanges.filter(Boolean))].join(", ")].filter(Boolean).join(" · ") || "SEC registrant"} title={c.name}>
-        <p>{c.industry || "Industry not classified"} · {c.city}, NC{c.fiscalYearEnd ? ` · Fiscal year ends ${c.fiscalYearEnd.slice(0, 2)}/${c.fiscalYearEnd.slice(2)}` : ""}{c.filerCategory ? ` · ${c.filerCategory}` : ""}</p>
+        <p>{c.industry || "Industry not classified"} · {c.city}, NC{c.county ? ` (${c.county} County)` : ""}{c.fiscalYearEnd ? ` · Fiscal year ends ${c.fiscalYearEnd.slice(0, 2)}/${c.fiscalYearEnd.slice(2)}` : ""}{c.filerCategory ? ` · ${c.filerCategory}` : ""}</p>
         {c.formerNames.length > 0 && <p className="text-sm mt-1">Formerly: {c.formerNames.slice(0, 3).join("; ")}</p>}
       </PageTitle>
 
       {sentence && <p className="text-lg leading-relaxed max-w-3xl -mt-2 mb-8">{sentence}</p>}
+
+      {c.pendingReport && (
+        <p className="rounded-md border border-rule bg-warn-soft p-3 text-sm mb-6">
+          {c.name} filed a {c.pendingReport.form} for the period ended {date(c.pendingReport.reportDate)} on {date(c.pendingReport.filed)}, but
+          the SEC’s structured-data feed doesn’t include its figures yet, so the numbers below stop earlier. <SourceLink href={c.pendingReport.url}>Read the filing</SourceLink>.
+        </p>
+      )}
+
+      {q && (
+        <section className="mb-8" aria-labelledby="latest-quarter">
+          <h2 id="latest-quarter" className="text-xs uppercase tracking-wide text-muted font-medium mb-2">
+            Latest quarter: {q.label}, ended {date(q.end)} · filed {date(q.filed)} · <SourceLink href={q.url}>{q.form}</SourceLink>
+          </h2>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
+            <Stat label="Quarterly revenue" value={money(q.revenue)} sub={q.prior ? `${signedPct(q.revenueGrowth)} vs ${money(q.prior.revenue)} a year earlier` : "No year-ago quarter in the data"} />
+            <Stat label="Quarterly net income" value={money(q.netIncome)} sub={q.prior ? `${signedPct(q.netIncomeGrowth)} vs ${money(q.prior.netIncome)} a year earlier` : undefined} toneClass={tone(q.netIncome)} />
+            <Stat label="Diluted EPS" value={perShare(q.epsDiluted)} sub={q.prior?.epsDiluted != null ? `${perShare(q.prior.epsDiluted)} a year earlier` : undefined} />
+          </div>
+          {q.revenueCalc && <p className="text-xs text-muted mt-1">Quarterly revenue calculated as net interest income plus noninterest income.</p>}
+        </section>
+      )}
 
       {cur ? (
         <>

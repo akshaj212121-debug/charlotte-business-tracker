@@ -2,8 +2,10 @@
 // Business Master File), with multi-year Form 990 financials from ProPublica Nonprofit Explorer.
 //   node pipeline/nonprofits.mjs [--top 100]  -> writes site/data/nonprofits.json
 import { cachedFetch, parseCsv, writeData, titleCase } from './lib.mjs';
+import { countyResolver, REGION_NAMES } from './geo.mjs';
 
 const TOP = Number(process.argv[process.argv.indexOf('--top') + 1]) || 100;
+const REGION_TOP = 25; // largest nonprofits in the Charlotte region's 8 NC counties
 
 const NTEE = {
   A: 'Arts & culture', B: 'Education', C: 'Environment', D: 'Animals', E: 'Health care', F: 'Mental health',
@@ -20,10 +22,17 @@ const ratio = (a, b) => (a == null || b == null || b === 0 ? null : a / b);
 const csv = await cachedFetch('https://www.irs.gov/pub/irs-soi/eo_nc.csv', 'irs/eo_nc.csv', { json: false });
 const bmf = parseCsv(csv).filter((r) => r.STATE === 'NC' && num(r.REVENUE_AMT) > 0);
 bmf.sort((a, b) => num(b.REVENUE_AMT) - num(a.REVENUE_AMT));
-console.log(`IRS BMF: ${bmf.length} NC exempt orgs with reported revenue; profiling top ${TOP}`);
+const resolveCounty = await countyResolver();
+for (const r of bmf) r.geo = resolveCounty(r.ZIP, r.CITY);
+const statewide = bmf.slice(0, TOP);
+const regional = bmf.filter((r) => REGION_NAMES.has(r.geo?.county)).slice(0, REGION_TOP);
+const rankState = new Map(statewide.map((r, i) => [r.EIN, i + 1]));
+const rankRegion = new Map(regional.map((r, i) => [r.EIN, i + 1]));
+const toProfile = [...statewide, ...regional.filter((r) => !rankState.has(r.EIN))];
+console.log(`IRS BMF: ${bmf.length} NC exempt orgs with reported revenue; profiling top ${TOP} statewide + ${toProfile.length - TOP} more from the Charlotte region`);
 
 const orgs = [];
-for (const r of bmf.slice(0, TOP)) {
+for (const r of toProfile) {
   const ein = r.EIN.replace(/\D/g, '');
   const pp = await cachedFetch(`https://projects.propublica.org/nonprofits/api/v2/organizations/${ein}.json`, `propublica/${ein}.json`).catch(() => null);
   const filings = (pp?.filings_with_data ?? [])
@@ -45,6 +54,10 @@ for (const r of bmf.slice(0, TOP)) {
     ein,
     name: titleCase(pp?.organization?.name || r.NAME),
     city: titleCase(r.CITY),
+    zip: (r.ZIP || '').slice(0, 5) || null,
+    county: r.geo?.county ?? null,
+    rankStatewide: rankState.get(r.EIN) ?? null,
+    rankRegion: rankRegion.get(r.EIN) ?? null,
     sector: NTEE[(r.NTEE_CD || 'Z')[0]] ?? 'Unclassified',
     nteeCode: r.NTEE_CD || null,
     taxStatus: SUBSECTION[r.SUBSECTION] ?? `501(c)(${Number(r.SUBSECTION)})`,

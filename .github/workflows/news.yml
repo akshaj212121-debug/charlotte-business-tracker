@@ -1,0 +1,57 @@
+name: Daily news update
+
+on:
+  schedule:
+    - cron: "0 12 * * 1-5" # 7:00 a.m. Eastern Standard Time (8:00 during daylight time), Monday-Friday
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      # Pinned so a CLI release can't change behavior unannounced. Auth is the Claude subscription
+      # token (CLAUDE_CODE_OAUTH_TOKEN), so runs use subscription limits, not API billing.
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code@2.1.328
+
+      - name: Write today's stories
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then echo "::error::CLAUDE_CODE_OAUTH_TOKEN secret is not set"; exit 1; fi
+          node update.mjs
+
+      # Never publish data that breaks the site: build it first, and commit only if the build passes.
+      - name: Build check
+        working-directory: site
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+
+      - name: Commit and push news.json
+        run: |
+          git add site/data/news.json
+          if git diff --cached --quiet; then echo "No new stories."; exit 0; fi
+          # Committed under the repo owner's GitHub identity: Vercel's Hobby plan deploys private-repo
+          # commits only from the account owner, so a bot author would block the auto-deploy.
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
+          git commit -m "chore: daily news update $(date -u +%F)"
+          git push

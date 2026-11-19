@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import SortableTable, { type Column, type Row } from "@/components/SortableTable";
 import { PageTitle } from "@/components/ui";
-import { nonprofits } from "@/lib/data";
+import { statewideNonprofits as nonprofits } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Nonprofits", description: "The largest North Carolina nonprofits by revenue, with Form 990 financials." };
 

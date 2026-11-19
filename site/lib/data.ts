@@ -21,6 +21,22 @@ export interface FiscalYearRow {
   longTermDebt: number | null;
 }
 
+export interface LatestQuarter {
+  end: string;
+  start: string;
+  filed: string;
+  form: string;
+  label: string; // e.g. "Q3 FY2026" (the company's own fiscal calendar)
+  url: string;
+  revenue: number | null;
+  revenueCalc: boolean;
+  netIncome: number | null;
+  epsDiluted: number | null;
+  prior: { end: string; revenue: number | null; netIncome: number | null; epsDiluted: number | null } | null;
+  revenueGrowth: number | null;
+  netIncomeGrowth: number | null;
+}
+
 export interface Filing {
   form: string;
   date: string;
@@ -39,6 +55,11 @@ export interface Company {
   industry: string;
   city: string;
   state: string;
+  zip: string | null;
+  county: string | null;
+  countyFrom: "zip" | "city" | null;
+  latestQuarter: LatestQuarter | null;
+  pendingReport: { form: string; reportDate: string; filed: string; url: string } | null;
   fiscalYearEnd: string | null;
   filerCategory: string;
   website: string | null;
@@ -79,6 +100,10 @@ export interface Nonprofit {
   ein: string;
   name: string;
   city: string;
+  zip: string | null;
+  county: string | null;
+  rankStatewide: number | null; // rank among the 100 largest NC nonprofits (IRS master-file revenue)
+  rankRegion: number | null; // rank among the 25 largest in the Charlotte region
   sector: string;
   nteeCode: string | null;
   taxStatus: string;
@@ -139,10 +164,18 @@ export const nonprofits = (nonprofitsFile.organizations as unknown as Nonprofit[
   .slice()
   .sort((a, b) => (b.filings[0]?.revenue ?? b.irsBmf.revenue ?? 0) - (a.filings[0]?.revenue ?? a.irsBmf.revenue ?? 0));
 
+export const statewideNonprofits = nonprofits.filter((n) => n.rankStatewide != null);
+
+// Charlotte-Concord-Gastonia MSA, NC counties (OMB Bulletin 23-01). Mirrors pipeline/geo.mjs.
+export const CORE_COUNTIES = ["Mecklenburg", "Union"];
+export const REGION_COUNTIES = ["Mecklenburg", "Union", "Cabarrus", "Gaston", "Iredell", "Lincoln", "Rowan", "Anson"];
+export const inRegion = (county: string | null | undefined) => !!county && REGION_COUNTIES.includes(county);
+
 export const privateData = privateFile as unknown as {
   generatedAt: string;
   fiscalYears: { completed: string; prior: string; current: string };
   contractors: Contractor[];
+  localContractors: Record<string, Contractor[]>;
   newAwards: Award[];
   warn: { year: number; sourceCsv: string; sourcePage: string; totals: { notices: number; workersAffected: number }; notices: WarnNotice[] };
 };

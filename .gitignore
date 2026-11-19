@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+pipeline/.cache/
+pipeline/*.log
+site/.next/
+site/.vercel/
+site/node_modules/
+*.tsbuildinfo
+.DS_Store

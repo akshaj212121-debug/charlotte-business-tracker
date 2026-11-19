@@ -19,9 +19,10 @@ const curFY = FY(fyStartYear), prevFY = FY(fyStartYear - 1), prevFY2 = FY(fyStar
 const CONTRACTS = ['A', 'B', 'C', 'D'];
 const NC = [{ country: 'USA', state: 'NC' }];
 
-async function topRecipients(fy, limit = 100) {
-  const body = { filters: { time_period: [{ start_date: fy.start, end_date: fy.end }], recipient_locations: NC, award_type_codes: CONTRACTS }, limit, page: 1 };
-  const res = await cachedFetch('https://api.usaspending.gov/api/v2/search/spending_by_category/recipient/', `usaspending/recipients-${fy.label}.json`, { method: 'POST', body, gapMs: 1000 });
+async function topRecipients(fy, limit = 100, locations = NC, tag = 'NC') {
+  const body = { filters: { time_period: [{ start_date: fy.start, end_date: fy.end }], recipient_locations: locations, award_type_codes: CONTRACTS }, limit, page: 1 };
+  const key = tag === 'NC' ? `usaspending/recipients-${fy.label}.json` : `usaspending/recipients-${tag}-${fy.label}.json`;
+  const res = await cachedFetch('https://api.usaspending.gov/api/v2/search/spending_by_category/recipient/', key, { method: 'POST', body, gapMs: 1000 });
   return res?.results ?? [];
 }
 
@@ -58,6 +59,22 @@ const newAwards = (awardsRes?.results ?? [])
   }));
 console.log(`USAspending: ${newAwards.length} new NC contract awards since ${iso(since)}`);
 
+// Charlotte core counties: top contract recipients located in Mecklenburg and Union (county FIPS).
+const LOCAL = { Mecklenburg: '119', Union: '179' };
+const local = {};
+for (const [county, fips] of Object.entries(LOCAL)) {
+  const loc = [{ country: 'USA', state: 'NC', county: fips }];
+  const [cur, prev] = await Promise.all([topRecipients(prevFY, 25, loc, county), topRecipients(prevFY2, 100, loc, county)]);
+  const prevMap = byId(prev);
+  local[county] = cur.map((r) => ({
+    name: titleCase(r.name), recipientId: r.recipient_id,
+    [prevFY.label]: r.amount, [prevFY2.label]: prevMap[r.recipient_id] ?? null,
+    growth: prevMap[r.recipient_id] ? (r.amount - prevMap[r.recipient_id]) / Math.abs(prevMap[r.recipient_id]) : null,
+    source: `https://www.usaspending.gov/recipient/${r.recipient_id}/latest`,
+  }));
+}
+console.log(`USAspending: local contractors ${Object.entries(local).map(([k, v]) => `${k} ${v.length}`).join(', ')}`);
+
 const warnCsv = await cachedFetch(WARN_URL, `warn/warn-${today.getUTCFullYear()}.csv`, { json: false, days: 7 });
 const warn = parseCsv(warnCsv).map((r) => ({
   company: r['WARN Notice: WARN Notice Name'],
@@ -77,6 +94,7 @@ await writeData('private.json', {
   source: 'USAspending.gov API; NC Department of Commerce WARN summary list',
   fiscalYears: { completed: prevFY.label, prior: prevFY2.label, current: curFY.label },
   contractors,
+  localContractors: local,
   newAwards,
   warn: { year: today.getUTCFullYear(), sourceCsv: WARN_URL, sourcePage: 'https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports', totals: warnTotals, notices: warn },
 });
