@@ -4,8 +4,8 @@ Runs on the 1st of each month (scheduled task "charlotte-hub-monthly"). Goal: fr
 newsletter issue, a commit pushed to GitHub (which redeploys the site). Every number published must come
 from a data file the pipeline wrote this run. Nothing is estimated.
 
-Working directory for commands below: `C:\Users\amogh\freelance-hq\charlotte-tracker`, which is its own git
-repo (GitHub: charlotte-business-tracker, private). Vercel deploys the live site from every push to `main`.
+Working directory for commands below: `C:\Users\amogh\charlotte-business-tracker`, a standalone project folder
+and git repo (GitHub: charlotte-business-tracker, private). Vercel deploys the live site from every push to `main`.
 
 ## 0. Pull first
 The daily news workflow commits `site/data/news.json` on GitHub every weekday, so start with
