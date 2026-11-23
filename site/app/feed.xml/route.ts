@@ -9,6 +9,9 @@ const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 // Root-relative links inside issue HTML must be absolute for feed readers; "]]>" can't appear inside CDATA.
 const absolute = (html: string) => html.replace(/href="\//g, `href="${SITE_URL}/`).replace(/]]>/g, "]]]]><![CDATA[>");
 
+const statsHtml = (stats: { value: string; label: string }[]) =>
+  stats.length ? `<h2>The numbers</h2><ul>${stats.map((s) => `<li><strong>${esc(s.value)}</strong>: ${esc(s.label)}</li>`).join("")}</ul>` : "";
+
 interface Entry { title: string; url: string; date: string; summary: string; html: string }
 
 export function GET() {
@@ -17,7 +20,7 @@ export function GET() {
       title: n.headline, url: `${SITE_URL}/news/${n.id}`, date: n.publishedAt, summary: n.dek,
       html: [...n.paragraphs.map((p) => `<p>${esc(p)}</p>`), `<p><strong>Why it matters:</strong> ${esc(n.whyItMatters)}</p>`].join(""),
     })),
-    ...getIssues().map((i) => ({ title: i.title, url: `${SITE_URL}/issues/${i.slug}`, date: `${i.date}T12:00:00Z`, summary: i.summary, html: absolute(i.html) })),
+    ...getIssues().map((i) => ({ title: i.title, url: `${SITE_URL}/issues/${i.slug}`, date: `${i.date}T12:00:00Z`, summary: i.summary, html: absolute(statsHtml(i.stats) + i.html) })),
   ].sort((a, b) => b.date.localeCompare(a.date));
 
   const items = entries.map((e) => `    <item>

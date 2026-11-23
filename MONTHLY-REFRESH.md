@@ -52,6 +52,10 @@ Rules (same as the project brief):
     as labeled; fiscal quarters differ by company. Companies with `pendingReport` filed newer reports than the SEC's
     structured data shows: say that and link the filing, never fill in their numbers.
 - No analyst estimates, "beat/miss" language, or price targets: none of that is public-record data.
+- Add 3 or 4 `stat: "value | label"` lines to the front matter for "The numbers" box. Each value must appear in the issue body.
+- Link that month's news stories (`site/data/news.json`) in a "From the news desk" section, and end with a
+  "What to watch" list of upcoming WARN effective dates from `private.json`.
+- Every table needs a source line or links to the records behind it.
 - Link companies to `/companies/<cik>`, nonprofits to `/nonprofits/<ein>`, primary filings by URL.
 - Load the `humanizer` skill before drafting. No em-dashes in prose.
 Re-check every number in the draft against the JSON before saving.
@@ -64,6 +68,10 @@ git pull --rebase && git push
 ```
 Pushing to `main` makes Vercel rebuild and publish the live site; no `vercel deploy` needed. If the
 lint or build fails, don't commit or push.
+
+## 4b. Email copy for Buttondown
+`node newsletter-email.mjs` writes `outreach/newsletter/<YYYY-MM>-buttondown.md`, with absolute links.
+Paste its Subject line and body into a new Buttondown email. Akshaj sends it; never send it automatically.
 
 ## 5. Report
 Reply with: data counts, the issue title, the production URL, and anything that failed.

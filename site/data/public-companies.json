@@ -189,6 +189,18 @@
    },
    "filings": [
     {
+     "form": "8-K",
+     "date": "2026-11-20",
+     "items": [
+      {
+       "code": "5.03",
+       "label": "Charter or bylaw amendment"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000608/bac-20261119.htm",
+     "distress": false
+    },
+    {
      "form": "10-Q",
      "date": "2026-10-30",
      "items": [],
@@ -1213,6 +1225,18 @@
     "fcfMargin": -0.053369459059260896
    },
    "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-11-19",
+     "items": [
+      {
+       "code": "8.01",
+       "label": "Other events"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926130154/tm2630241d1_8k.htm",
+     "distress": false
+    },
     {
      "form": "8-K",
      "date": "2026-11-17",
@@ -2449,18 +2473,6 @@
      ],
      "url": "https://www.sec.gov/Archives/edgar/data/920148/000092014826000147/lh-20260527.htm",
      "distress": false
-    },
-    {
-     "form": "8-K",
-     "date": "2026-05-26",
-     "items": [
-      {
-       "code": "5.07",
-       "label": "Shareholder vote results"
-      }
-     ],
-     "url": "https://www.sec.gov/Archives/edgar/data/920148/000092014826000143/lh-20260521.htm",
-     "distress": false
     }
    ],
    "signals": [],
@@ -2628,6 +2640,18 @@
     "fcfMargin": 0.23194633686196414
    },
    "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-11-19",
+     "items": [
+      {
+       "code": "8.01",
+       "label": "Other events"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/798941/000119312526468714/d16322d8k.htm",
+     "distress": false
+    },
     {
      "form": "10-Q",
      "date": "2026-11-06",
@@ -6647,6 +6671,22 @@
    "filings": [
     {
      "form": "8-K",
+     "date": "2026-11-23",
+     "items": [
+      {
+       "code": "1.01",
+       "label": "Entered material agreement"
+      },
+      {
+       "code": "2.03",
+       "label": "New debt obligation"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1674335/000119312526472333/d168719d8k.htm",
+     "distress": false
+    },
+    {
+     "form": "8-K",
      "date": "2026-11-12",
      "items": [
       {
@@ -6908,6 +6948,18 @@
     "fcfMargin": 0.011235955056179775
    },
    "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-11-20",
+     "items": [
+      {
+       "code": "2.02",
+       "label": "Results of operations"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/41719/000114036126044950/ef20086010_8k.htm",
+     "distress": false
+    },
     {
      "form": "10-Q",
      "date": "2026-08-06",
@@ -9381,6 +9433,22 @@
     "fcfMargin": null
    },
    "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-11-23",
+     "items": [
+      {
+       "code": "5.02",
+       "label": "Executive or director change"
+      },
+      {
+       "code": "7.01",
+       "label": "Regulation FD disclosure"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1823529/000182352926000245/act-20261119.htm",
+     "distress": false
+    },
     {
      "form": "10-Q",
      "date": "2026-11-05",
@@ -12381,6 +12449,18 @@
    "filings": [
     {
      "form": "8-K",
+     "date": "2026-11-23",
+     "items": [
+      {
+       "code": "2.02",
+       "label": "Results of operations"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/18255/000156276226000134/cato-20261119.htm",
+     "distress": false
+    },
+    {
+     "form": "8-K",
      "date": "2026-09-18",
      "items": [
       {
@@ -12415,22 +12495,6 @@
      "date": "2026-05-28",
      "items": [],
      "url": "https://www.sec.gov/Archives/edgar/data/18255/000001825526000004/cato-20260502.htm",
-     "distress": false
-    },
-    {
-     "form": "8-K",
-     "date": "2026-05-26",
-     "items": [
-      {
-       "code": "2.02",
-       "label": "Results of operations"
-      },
-      {
-       "code": "5.07",
-       "label": "Shareholder vote results"
-      }
-     ],
-     "url": "https://www.sec.gov/Archives/edgar/data/18255/000156276226000069/cato-20260521.htm",
      "distress": false
     }
    ],
@@ -14423,6 +14487,22 @@
    },
    "filings": [
     {
+     "form": "8-K",
+     "date": "2026-11-19",
+     "items": [
+      {
+       "code": "3.02",
+       "label": "Unregistered sale of equity"
+      },
+      {
+       "code": "8.01",
+       "label": "Other events"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1859919/000185991926000101/bdc-20261119.htm",
+     "distress": false
+    },
+    {
      "form": "10-Q",
      "date": "2026-11-05",
      "items": [],
@@ -15173,6 +15253,18 @@
    },
    "filings": [
     {
+     "form": "8-K",
+     "date": "2026-11-19",
+     "items": [
+      {
+       "code": "3.01",
+       "label": "Delisting notice"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1753162/000143774926037714/fthm20261118_8k.htm",
+     "distress": true
+    },
+    {
      "form": "10-Q",
      "date": "2026-11-13",
      "items": [],
@@ -15351,6 +15443,18 @@
     }
    ],
    "signals": [
+    {
+     "form": "8-K",
+     "date": "2026-11-19",
+     "items": [
+      {
+       "code": "3.01",
+       "label": "Delisting notice"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1753162/000143774926037714/fthm20261118_8k.htm",
+     "distress": true
+    },
     {
      "form": "8-K",
      "date": "2026-08-25",
@@ -16428,6 +16532,22 @@
     "fcfMargin": null
    },
    "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-11-23",
+     "items": [
+      {
+       "code": "1.01",
+       "label": "Entered material agreement"
+      },
+      {
+       "code": "2.03",
+       "label": "New debt obligation"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000044/bbdc-20261119.htm",
+     "distress": false
+    },
     {
      "form": "10-Q",
      "date": "2026-11-05",
@@ -20125,26 +20245,6 @@
       }
      ],
      "url": "https://www.sec.gov/Archives/edgar/data/1357874/000162828026038307/dtil-20260527.htm",
-     "distress": false
-    },
-    {
-     "form": "8-K",
-     "date": "2026-05-26",
-     "items": [
-      {
-       "code": "5.02",
-       "label": "Executive or director change"
-      },
-      {
-       "code": "5.03",
-       "label": "Charter or bylaw amendment"
-      },
-      {
-       "code": "5.07",
-       "label": "Shareholder vote results"
-      }
-     ],
-     "url": "https://www.sec.gov/Archives/edgar/data/1357874/000162828026038220/dtil-20260521.htm",
      "distress": false
     }
    ],
@@ -25311,6 +25411,18 @@
    },
    "filings": [
     {
+     "form": "8-K",
+     "date": "2026-11-20",
+     "items": [
+      {
+       "code": "8.01",
+       "label": "Other events"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1817825/000121390026122547/ea0313119-8k_steele.htm",
+     "distress": false
+    },
+    {
      "form": "10-Q",
      "date": "2026-11-13",
      "items": [],
@@ -25867,6 +25979,22 @@
    "derived": null,
    "filings": [
     {
+     "form": "8-K",
+     "date": "2026-11-23",
+     "items": [
+      {
+       "code": "5.02",
+       "label": "Executive or director change"
+      },
+      {
+       "code": "7.01",
+       "label": "Regulation FD disclosure"
+      }
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1531193/000110465926130875/tm2630415d1_8k.htm",
+     "distress": false
+    },
+    {
      "form": "10-Q",
      "date": "2026-11-16",
      "items": [],
@@ -26253,5 +26381,6 @@
     "xbrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000017797.json"
    }
   }
- ]
+ ],
+ "filingsUpdatedAt": "2026-11-23T23:00:00.000Z"
 }

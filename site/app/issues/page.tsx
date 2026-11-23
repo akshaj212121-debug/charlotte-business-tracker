@@ -12,7 +12,7 @@ export default function IssuesPage() {
   return (
     <>
       <PageTitle kicker="Monthly" title="The newsletter">
-        A monthly briefing built from that month’s public filings. Every number links back to the record it came from.
+        A monthly briefing built from that month’s public filings. Every section links back to the public records it came from.
       </PageTitle>
       <ul className="divide-y divide-rule border-y border-rule">
         {issues.map((i) => (
