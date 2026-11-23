@@ -8,6 +8,8 @@ export interface Issue {
   title: string;
   date: string;
   summary: string;
+  /** Headline figures for the "The numbers" box, from repeated `stat: "value | label"` front-matter lines. */
+  stats: { value: string; label: string }[];
   html: string;
 }
 
@@ -22,15 +24,23 @@ function parse(slug: string): Issue {
   const raw = fs.readFileSync(path.join(DIR, `${slug}.md`), "utf8");
   const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   const meta: Record<string, string> = {};
+  const stats: Issue["stats"] = [];
   for (const line of (match?.[1] ?? "").split("\n")) {
     const i = line.indexOf(":");
-    if (i > 0) meta[line.slice(0, i).trim()] = line.slice(i + 1).trim().replace(/^"|"$/g, "");
+    if (i <= 0) continue;
+    const key = line.slice(0, i).trim();
+    const value = line.slice(i + 1).trim().replace(/^"|"$/g, "");
+    if (key === "stat") {
+      const [v, ...label] = value.split("|");
+      stats.push({ value: v.trim(), label: label.join("|").trim() });
+    } else meta[key] = value;
   }
   return {
     slug,
     title: meta.title ?? slug,
     date: meta.date ?? slug,
     summary: meta.summary ?? "",
+    stats,
     html: marked.parse(match?.[2] ?? raw, { async: false }) as string,
   };
 }
@@ -45,4 +55,11 @@ export function getIssues(): Issue[] {
 
 export function getIssue(slug: string): Issue | undefined {
   return getIssues().find((i) => i.slug === slug);
+}
+
+/** The issues just before and after `slug` in date order, for previous/next links. */
+export function getAdjacentIssues(slug: string): { newer?: Issue; older?: Issue } {
+  const all = getIssues(); // newest first
+  const i = all.findIndex((x) => x.slug === slug);
+  return i < 0 ? {} : { newer: all[i - 1], older: all[i + 1] };
 }
