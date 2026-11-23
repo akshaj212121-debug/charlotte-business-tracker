@@ -3,6 +3,106 @@
  "coveredFactIds": [],
  "items": [
   {
+   "id": "fathom-nasdaq-stockholders-equity-notice",
+   "category": "Distress",
+   "publishedAt": "2026-11-23T23:10:00.000Z",
+   "headline": "Fathom gets its third Nasdaq warning since May after equity turns negative",
+   "dek": "The Cary real estate company reported a stockholders’ deficit of $1.8 million at the end of September, below Nasdaq’s $2.5 million minimum.",
+   "paragraphs": [
+    "Fathom Holdings Inc. received a notice from Nasdaq on Nov. 17 saying it no longer meets the exchange’s rule that listed companies keep at least $2.5 million in stockholders’ equity, according to an 8-K filed Nov. 19. Fathom’s most recent quarterly report showed a stockholders’ deficit of $1,776,000 as of Sept. 30.",
+    "The company has until Jan. 4, 2027, to submit a plan to get back into compliance. If Nasdaq accepts it, Fathom could get until May 16, 2027. It is the company’s third delisting-notice 8-K since late May, after filings on May 29 and Aug. 25.",
+    "The slide was fast. Fathom had $37.4 million in stockholders’ equity at the end of 2025. In the third quarter, revenue fell 23.1% to $88.6 million from $115.3 million, and the net loss grew to $21.8 million from $4.4 million."
+   ],
+   "whyItMatters": "Stockholders’ equity is what would be left for shareholders if a company sold everything it owns and paid everything it owes. When it drops below zero, the company owes more than its assets are worth on paper, and exchanges start asking how it plans to fix that.",
+   "entities": [
+    {
+     "cik": 1753162,
+     "name": "Fathom Holdings Inc."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Fathom 8-K, Nov. 19, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1753162/000143774926037714/fthm20261118_8k.htm"
+    },
+    {
+     "label": "Fathom 10-Q for the quarter ended Sept. 30, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1753162/000143774926036656/fthm20260930_10q.htm"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "liquidia-settlement-charge-third-quarter-loss",
+   "category": "Earnings",
+   "publishedAt": "2026-11-23T23:20:00.000Z",
+   "headline": "Liquidia’s sales quadrupled last quarter. A $389.7 million legal settlement still left it $236 million in the red",
+   "dek": "The Morrisville drugmaker booked the cost of ending its fight with United Therapeutics in the third quarter, wiping out a record quarter for its inhaled drug Yutrepia.",
+   "paragraphs": [
+    "Liquidia Corp. reported revenue of $225.3 million for the quarter ended Sept. 30, more than four times the $54.3 million of a year earlier, according to the 10-Q it filed with the SEC on Nov. 10. It still lost $236.3 million, or $2.64 a share, compared with a $3.5 million loss a year ago.",
+    "The difference is a single line: a net litigation settlement charge of $389.7 million. On Oct. 13, Liquidia settled all of its lawsuits with United Therapeutics. It agreed to make a net payment of $175.0 million, pay another $145.4 million in two installments due by April 30, 2027, and drop a second use, pulmonary hypertension tied to interstitial lung disease, from Yutrepia’s label.",
+    "The underlying business is growing quickly. Liquidia booked $529.8 million in revenue in the first nine months of 2026, compared with $158.3 million for all of 2025, and ended September with $396.1 million in cash, up from $190.7 million at the end of last year."
+   ],
+   "whyItMatters": "A one-time charge can hide what a company’s day-to-day business is doing. Here the loss comes from settling litigation, not from sales falling, and the filing shows both numbers so readers can separate them.",
+   "entities": [
+    {
+     "cik": 1819576,
+     "name": "Liquidia Corp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Liquidia 10-Q for the quarter ended Sept. 30, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1819576/000110465926124752/lqda-20260930x10q.htm"
+    },
+    {
+     "label": "Liquidia 8-K on the settlement, Oct. 14, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1819576/000110465926115672/tm2627557d1_8k.htm"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "jeld-wen-closes-834-million-debt-exchange",
+   "category": "Filings",
+   "publishedAt": "2026-11-23T23:30:00.000Z",
+   "headline": "JELD-WEN swaps old debt for $834 million in new secured notes at up to 11.5% interest",
+   "dek": "The Charlotte door and window maker pushed most of its 2027 notes out to 2031, and the new notes cost more than twice the rate of the bonds they replace.",
+   "paragraphs": [
+    "JELD-WEN Holding Inc. has finished the first stage of its debt overhaul. On Nov. 20, a subsidiary issued $834.2 million of new first-lien secured notes due 2031, according to an 8-K the Charlotte company filed with the SEC on Nov. 23. The notes went out in exchange for $361.9 million of 4.875% notes due 2027, about $381.4 million in new cash from investors, and about $71.0 million of term loans due 2028.",
+    "The new debt is more expensive. It pays 10.5% a year in cash, or 11.5% if the company chooses to pay up to 2.5 points of that by adding to the amount it owes. The old notes paid 4.875%. In a separate Dutch auction, the company also bought back about $279.9 million of its term loans for about $240.7 million in cash, roughly 86 cents on the dollar. Only $38.1 million of the old 2027 notes remain outstanding, with another $23.9 million tendered and waiting to settle.",
+    "The deal was set up in a Sept. 29 agreement with holders of about 94.5% of the 2027 notes and launched Oct. 28. It closed one week after the company’s chief financial officer left on Nov. 13."
+   ],
+   "whyItMatters": "JELD-WEN’s shareholders’ equity fell to $92.2 million at the end of 2025 against $2.01 billion in liabilities. The exchange pushes debt that was due in 2027 and 2028 out to 2031, but at a much higher interest cost, and the new notes are secured by most of the company’s assets.",
+   "entities": [
+    {
+     "cik": 1674335,
+     "name": "JELD-WEN Holding, Inc."
+    }
+   ],
+   "sources": [
+    {
+     "label": "JELD-WEN 8-K, Nov. 23, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1674335/000119312526472333/d168719d8k.htm"
+    },
+    {
+     "label": "JELD-WEN 8-K, Sept. 29, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1674335/000167433526000126/jeld-20260929.htm"
+    },
+    {
+     "label": "JELD-WEN 8-K on CFO resignation, Oct. 19, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1674335/000167433526000129/jeld-20261013.htm"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
    "id": "nucor-third-quarter-profit-more-than-doubles",
    "category": "Earnings",
    "publishedAt": "2026-11-23T13:00:00.000Z",
