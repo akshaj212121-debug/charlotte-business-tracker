@@ -19,7 +19,7 @@ export default function Signup() {
         </form>
       ) : null}
       <p className="text-sm text-muted mt-2">
-        {BUTTONDOWN_USERNAME ? "Emails are handled by Buttondown and used only to send this newsletter. Unsubscribe from any issue. " : ""}
+        {BUTTONDOWN_USERNAME ? <>Emails are handled by Buttondown and used only to send this newsletter. Unsubscribe from any issue. <a href="/privacy" className="text-accent underline">Privacy</a>. </> : ""}
         Or follow the <a href="/feed.xml" className="text-accent underline">RSS feed</a> in any feed reader.
       </p>
     </section>

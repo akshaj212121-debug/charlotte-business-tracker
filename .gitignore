@@ -9,3 +9,12 @@ site/.vercel/
 site/node_modules/
 *.tsbuildinfo
 .DS_Store
+.site-build.tgz
+
+# Private planning and college-application notes: keep out of the public repo
+outreach/
+PLAN-next-steps.md
+TODO-now.md
+NEW-BUSINESSES-FEASIBILITY.md
+.site-snapshot.tgz
+.cbt.bundle

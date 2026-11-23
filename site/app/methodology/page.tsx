@@ -53,6 +53,7 @@ export default function MethodologyPage() {
           <li><strong>Numbers come from the record.</strong> The model never types a figure. It writes placeholders, and software fills in each amount, percentage and date from the source data. Any story containing a typed number, a word like “rose” or “fell”, or a record it wasn’t given is discarded automatically.</li>
           <li><strong>Sources on every story.</strong> Each story links to the filings or records it was written from. 8-K stories report which official event items a company filed; they don’t describe the filing’s contents beyond that.</li>
           <li><strong>Before publishing,</strong> the job rebuilds the whole site; if anything fails, nothing is published that day.</li>
+          <li><strong>No human edits each story before it appears.</strong> Stories publish automatically once they pass the checks above, so those checks are the safeguard. If you spot an error, please <a href="/corrections" className="text-accent underline">report it</a>; corrected stories are fixed and the correction is noted.</li>
         </ul>
       </section>
 

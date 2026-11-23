@@ -23,8 +23,8 @@ export function Stat({ label, value, sub, toneClass = "" }: { label: string; val
 
 export function Section({ title, href, linkLabel, children }: { title: string; href?: string; linkLabel?: string; children: React.ReactNode }) {
   return (
-    <section className="mt-12">
-      <div className="flex items-baseline justify-between gap-4 border-b border-rule pb-2 mb-4">
+    <section className="mt-12 min-w-0">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-rule pb-2 mb-4">
         <h2 className="font-serif text-xl sm:text-2xl font-semibold">{title}</h2>
         {href && <Link href={href} className="text-sm text-accent hover:underline whitespace-nowrap">{linkLabel ?? "See all"} →</Link>}
       </div>

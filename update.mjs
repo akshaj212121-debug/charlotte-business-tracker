@@ -61,6 +61,15 @@ const pad = (cik) => String(cik).padStart(10, '0');
 const NEWSWORTHY_ITEMS = new Set(['1.01', '1.02', '1.03', '2.01', '2.02', '2.03', '2.05', '2.06', '3.01', '3.03', '4.01', '4.02', '5.01', '5.02']);
 const OTHER_FORMS = { 'S-1': 'registration statement for a new securities offering', '15-12G': 'notice ending its SEC registration', '25-NSE': 'notice removing its securities from an exchange' };
 
+// A failed source request returns null so one bad company doesn't stop the run, but failures are counted:
+// if every request fails (network blocked, SEC rejecting the User-Agent), the run must fail loudly instead of
+// reporting "Nothing new", which is how an empty news.json can look healthy.
+const fetchStats = { ok: 0, failed: 0, lastError: '' };
+const sourceFetch = (...args) => cachedFetch(...args).then(
+  (r) => { fetchStats.ok++; return r; },
+  (e) => { fetchStats.failed++; fetchStats.lastError = e?.message ?? String(e); return null; },
+);
+
 function priority(f) {
   if (f.kind === 'filing') {
     if (f.codes.some((c) => DISTRESS_ITEMS.has(c) || c === '1.03')) return 100;
@@ -77,7 +86,7 @@ function priority(f) {
 async function secFacts(companies, since) {
   const facts = [];
   for (const c of companies) {
-    const sub = await cachedFetch(`https://data.sec.gov/submissions/CIK${pad(c.cik)}.json`, `news/sub-${c.cik}.json`, { days: 0.25, gapMs: 130, headers: SEC_HEADERS }).catch(() => null);
+    const sub = await sourceFetch(`https://data.sec.gov/submissions/CIK${pad(c.cik)}.json`, `news/sub-${c.cik}.json`, { days: 0.25, gapMs: 130, headers: SEC_HEADERS });
     const r = sub?.filings?.recent;
     if (!r) continue;
     let factsJson; // fetched lazily, only when a 10-Q/10-K needs figures
@@ -96,7 +105,7 @@ async function secFacts(companies, since) {
         raw: {},
       };
       if (isReport) {
-        factsJson ??= await cachedFetch(`https://data.sec.gov/api/xbrl/companyfacts/CIK${pad(c.cik)}.json`, `news/facts-${c.cik}.json`, { days: 0.25, gapMs: 130, headers: SEC_HEADERS }).catch(() => null);
+        factsJson ??= await sourceFetch(`https://data.sec.gov/api/xbrl/companyfacts/CIK${pad(c.cik)}.json`, `news/facts-${c.cik}.json`, { days: 0.25, gapMs: 130, headers: SEC_HEADERS });
         const q = form === '10-Q' ? buildLatestQuarter(factsJson) : null;
         const y = form === '10-K' ? buildFinancials(factsJson).years : null;
         if (q && q.accn === accn) {
@@ -137,7 +146,7 @@ async function awardFacts(since, today) {
     fields: ['Award ID', 'Recipient Name', 'Award Amount', 'Awarding Agency', 'Start Date', 'Description', 'generated_internal_id'],
     sort: 'Award Amount', order: 'desc', limit: 25, page: 1,
   };
-  const res = await cachedFetch('https://api.usaspending.gov/api/v2/search/spending_by_award/', `news/awards-${today}.json`, { method: 'POST', body, days: 0.25, gapMs: 1000 }).catch(() => null);
+  const res = await sourceFetch('https://api.usaspending.gov/api/v2/search/spending_by_award/', `news/awards-${today}.json`, { method: 'POST', body, days: 0.25, gapMs: 1000 });
   return (res?.results ?? [])
     .filter((a) => a['Start Date'] >= since && a['Award Amount'] >= MIN_AWARD)
     .slice(0, 8)
@@ -154,7 +163,7 @@ async function awardFacts(since, today) {
 async function blsFacts() {
   const facts = [];
   for (const s of BLS_SERIES) {
-    const res = await cachedFetch(`https://api.bls.gov/publicAPI/v1/timeseries/data/${s.id}`, `news/bls-${s.id}.json`, { days: 0.25, gapMs: 1000 }).catch(() => null);
+    const res = await sourceFetch(`https://api.bls.gov/publicAPI/v1/timeseries/data/${s.id}`, `news/bls-${s.id}.json`, { days: 0.25, gapMs: 1000 });
     const data = (res?.Results?.series?.[0]?.data ?? []).filter((d) => /^M(0[1-9]|1[0-2])$/.test(d.period));
     const [cur, prev] = data;
     if (!cur || !prev) continue;
@@ -187,7 +196,7 @@ Accuracy rules (a story that breaks any of them is discarded):
 4. When a fact has a "note" or "revenueNote", follow it.
 5. A filing's "items" are the official SEC 8-K item descriptions. Report that the company filed them; describe nothing beyond what the item description says.
 
-Style: objective, plain financial-news prose for business owners and investors. Lead with the most important fact. Write company names as given. Headline in sentence case, at most 100 characters. Dek: one sentence. One to three short paragraphs. "whyItMatters": one or two sentences on why this kind of record is significant, grounded in what the record type means, with no investment advice. Plain text only: no markdown, no HTML, no bullet points, no emoji, no em dashes.
+Style: an objective financial news reporter writing for business owners, investors and curious Charlotte readers. Facts only, no spin or hype, but not robotic: open with a lead that makes the reader want the next sentence, use concrete numbers, keep paragraphs short, and make clear why the record matters for Charlotte. Lead with the most important fact. Write company names as given. Headline in sentence case, at most 100 characters. Dek: one sentence. One to three short paragraphs. "whyItMatters": one or two sentences on why this kind of record is significant, grounded in what the record type means, with no investment advice. Plain text only: no markdown, no HTML, no bullet points, no emoji, no em dashes.
 
 Combine facts about the same company or event into one story. Skip facts with little news value by leaving them out. Write at most 8 stories. Pick each story's category from: ${CATEGORIES.join(', ')}.`;
 
@@ -301,6 +310,8 @@ async function main() {
   const { companies } = JSON.parse(await fs.readFile(COMPANIES_FILE, 'utf8'));
 
   const all = [...await secFacts(companies, since), ...await awardFacts(since, today), ...await blsFacts()];
+  if (fetchStats.failed) console.warn(`Source requests: ${fetchStats.ok} ok, ${fetchStats.failed} failed (last: ${fetchStats.lastError}).`);
+  if (!fetchStats.ok && fetchStats.failed) throw new Error(`every source request failed (${fetchStats.failed}), so no facts could be collected. Last error: ${fetchStats.lastError}`);
   const fresh = all.filter((f) => !covered.has(f.id)).sort((a, b) => priority(b) - priority(a)).slice(0, MAX_FACTS);
   console.log(`Facts: ${all.length} in the last ${WINDOW_DAYS} days, ${fresh.length} new (cap ${MAX_FACTS}).`);
   if (!fresh.length) { console.log('Nothing new. No Claude call, no file change.'); return; }

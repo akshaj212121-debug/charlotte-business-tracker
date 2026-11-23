@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { StatewideHelp } from "@/components/JobHelp";
 import SortableTable, { type Column, type Row } from "@/components/SortableTable";
 import { PageTitle, Section, SourceLink, Stat } from "@/components/ui";
-import { privateData, warnNotices } from "@/lib/data";
+import { REGION_COUNTIES, privateData, warnNotices } from "@/lib/data";
 import { int } from "@/lib/format";
+import { countySlug } from "@/lib/jobHelp";
 
 export const metadata: Metadata = { title: "Layoffs & closures", description: "North Carolina WARN Act layoff and closure notices." };
 
@@ -36,11 +39,21 @@ export default function LayoffsPage() {
         <Stat label="Closures" value={int(closures)} sub={`${int(totals.notices - closures)} layoffs`} />
         <Stat label="Most affected county" value={byCounty[0]?.[0] ?? "—"} sub={byCounty[0] ? `${int(byCounty[0][1])} workers` : undefined} />
       </div>
+      <Section title="Laid off? Where to get help">
+        <StatewideHelp />
+        <p className="mt-4 text-sm">
+          Charlotte-region county pages, with local career centers and each county&apos;s notices:{" "}
+          {REGION_COUNTIES.map((c, i) => (
+            <span key={c}>{i > 0 && " · "}<Link href={`/layoffs/${countySlug(c)}`} className="text-accent hover:underline">{c}</Link></span>
+          ))}
+        </p>
+      </Section>
+      <div className="mt-12" />
       <SortableTable columns={columns} rows={rows} searchKeys={["company", "county", "city"]} initialSort="noticeDate" placeholder="Search company, county or city" />
       <Section title="Workers affected by county">
         <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 text-sm">
           {byCounty.map(([county, n]) => (
-            <li key={county} className="flex justify-between border-b border-rule py-1.5"><span>{county}</span><span className="num">{int(n)}</span></li>
+            <li key={county} className="flex justify-between border-b border-rule py-1.5"><span>{REGION_COUNTIES.includes(county) ? <Link href={`/layoffs/${countySlug(county)}`} className="text-accent hover:underline">{county}</Link> : county}</span><span className="num">{int(n)}</span></li>
           ))}
         </ul>
       </Section>

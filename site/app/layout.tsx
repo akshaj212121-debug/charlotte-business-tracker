@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
+import Analytics from "@/components/Analytics";
+import { getNews } from "@/lib/news";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif4" });
@@ -18,11 +20,13 @@ const NAV = [
   { href: "/news", label: "News" },
   { href: "/issues", label: "Newsletter" },
   { href: "/charlotte", label: "Charlotte" },
+  { href: "/region", label: "Counties & towns" },
   { href: "/companies", label: "Public companies" },
   { href: "/earnings", label: "Earnings" },
   { href: "/nonprofits", label: "Nonprofits" },
   { href: "/contracts", label: "Federal contracts" },
   { href: "/layoffs", label: "Layoffs" },
+  { href: "/classroom", label: "Classroom" },
   { href: "/methodology", label: "Methodology" },
 ];
 
@@ -38,7 +42,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </Link>
             <nav aria-label="Main" className="mt-3 -mx-4 overflow-x-auto px-4">
               <ul className="flex gap-5 text-sm whitespace-nowrap">
-                {NAV.map((n) => (
+                {/* Hide the News tab until the daily pipeline has published at least one story. */}
+                {NAV.filter((n) => n.href !== "/news" || getNews().length > 0).map((n) => (
                   <li key={n.href}>
                     <Link href={n.href} className="text-muted hover:text-ink">{n.label}</Link>
                   </li>
@@ -56,8 +61,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               financials, and this site never estimates them. <Link href="/methodology" className="underline">How this works</Link>.
             </p>
             <p>Not investment advice. Figures are as filed and may be restated later by the filer. <a href="/feed.xml" className="underline">RSS feed</a>.</p>
+            <p><Link href="/about" className="underline">About</Link> · <Link href="/corrections" className="underline">Corrections</Link> · <Link href="/privacy" className="underline">Privacy</Link></p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );

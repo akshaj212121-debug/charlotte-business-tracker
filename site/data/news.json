@@ -1,5 +1,265 @@
 {
- "generatedAt": null,
+ "generatedAt": "2026-11-23T13:00:00.000Z",
  "coveredFactIds": [],
- "items": []
+ "items": [
+  {
+   "id": "nucor-third-quarter-profit-more-than-doubles",
+   "category": "Earnings",
+   "publishedAt": "2026-11-23T13:00:00.000Z",
+   "headline": "Nucor’s third-quarter profit more than doubles to $1.32 billion",
+   "dek": "The Charlotte steelmaker earned $5.80 a share in the quarter ended Oct. 3, up from $2.63 a year earlier, on revenue of $11.25 billion.",
+   "paragraphs": [
+    "Nucor Corp., the third-largest public company headquartered in Charlotte by revenue, earned $1.32 billion in its third quarter. That is more than double the $607 million it earned in the same quarter a year ago, according to the 10-Q the steelmaker filed with the SEC on Nov. 10.",
+    "Revenue rose 32% to $11.25 billion from $8.52 billion. Diluted earnings came to $5.80 a share, compared with $2.63. Put another way, Nucor earned about 77% of its entire 2025 per-share profit of $7.52 in a single quarter.",
+    "It is a sharp turn from last year. In 2025, Nucor’s net income slipped to $1.74 billion from $2.03 billion in 2024, even as revenue grew to $32.49 billion. The company first reported the quarter in an earnings 8-K on Oct. 26."
+   ],
+   "whyItMatters": "Nucor is one of Charlotte’s largest corporate headquarters. A 10-Q is the official quarterly report a public company must file with the SEC, so these are the company’s own reported numbers, not analyst estimates.",
+   "entities": [
+    {
+     "cik": 73309,
+     "name": "Nucor Corp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nucor 10-Q for the quarter ended Oct. 3, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526454565/nue-20261003.htm"
+    },
+    {
+     "label": "Nucor earnings 8-K, Oct. 26, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526432117/d129328d8k.htm"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "bank-of-america-revenue-up-profit-down-third-quarter",
+   "category": "Earnings",
+   "publishedAt": "2026-11-23T12:50:00.000Z",
+   "headline": "Bank of America’s revenue rose last quarter. Its profit fell 17%.",
+   "dek": "North Carolina’s largest public company took in $29.96 billion in the third quarter, up 3.2%, but net income dropped to $6.93 billion from $8.33 billion.",
+   "paragraphs": [
+    "Bank of America Corp. brought in more money in its third quarter and kept less of it. Revenue for the three months ended Sept. 30 was $29.96 billion, up 3.2% from $29.04 billion a year earlier, according to the 10-Q the Charlotte bank filed with the SEC on Oct. 30.",
+    "Net income went the other way, falling 16.8% to $6.93 billion from $8.33 billion. Diluted earnings were 91 cents a share, down from $1.04. In plain numbers, revenue grew by about $918 million while profit shrank by about $1.4 billion.",
+    "The bank first released the quarter’s results in an earnings 8-K on Oct. 14. The income statement in the 10-Q shows, line by line, where the difference between revenue and profit went. For context, Bank of America earned $30.51 billion on $113.10 billion of revenue in 2025, more than any other public company based in North Carolina."
+   ],
+   "whyItMatters": "Bank of America is the largest public company headquartered in North Carolina by revenue. When its quarterly profit moves by more than a billion dollars, the reason is in the filing, and it is worth reading before trusting anyone’s summary of it.",
+   "entities": [
+    {
+     "cik": 70858,
+     "name": "Bank of America Corp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bank of America 10-Q for the quarter ended Sept. 30, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000548/bac-20260930.htm"
+    },
+    {
+     "label": "Bank of America earnings 8-K, Oct. 14, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000481/bac-20261014.htm"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "driven-brands-item-4-02-non-reliance",
+   "category": "Distress",
+   "publishedAt": "2026-11-23T12:40:00.000Z",
+   "headline": "Driven Brands tells investors not to rely on some past financial statements",
+   "dek": "The Charlotte company filed a rare Item 4.02 notice on Nov. 3, five months after reporting a notice from its stock exchange.",
+   "paragraphs": [
+    "Driven Brands Holdings Inc., based in Charlotte, filed an 8-K with the SEC on Nov. 3 under Item 4.02. That is the item a company uses when it concludes that financial statements it already published should no longer be relied on. It filed the notice in the same 8-K as its earnings release.",
+    "These notices are rare. Among the North Carolina public companies this site tracks, there have been only two since late May: Driven Brands and Pelthos Therapeutics, which filed one on Aug. 13. Driven Brands had already drawn attention in June, when a June 5 8-K reported Item 3.01, the item for a delisting notice or a failure to meet a continued listing rule.",
+    "The most recent quarterly figures in the company’s SEC data cover the quarter ended June 27, when it reported revenue of $507.4 million and net income of $34.2 million. Because of the Nov. 3 notice, readers should check that filing to see which past periods the company says are affected before relying on any earlier number, including the figures on this site’s Driven Brands profile."
+   ],
+   "whyItMatters": "An Item 4.02 notice means a company has decided numbers it already reported are wrong enough that investors should not rely on them. It is one of the most serious disclosures a public company can make, and corrected figures can differ from what was first reported.",
+   "entities": [
+    {
+     "cik": 1804745,
+     "name": "Driven Brands Holdings Inc."
+    }
+   ],
+   "sources": [
+    {
+     "label": "Driven Brands 8-K with Items 2.02 and 4.02, Nov. 3, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1804745/000162828026069090/drvn-20261103.htm"
+    },
+    {
+     "label": "Driven Brands 8-K with Item 3.01, June 5, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1804745/000180474526000051/drvn-20260601.htm"
+    },
+    {
+     "label": "Driven Brands 10-Q for the quarter ended June 27, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1804745/000180474526000075/drvn-20260627.htm"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "mecklenburg-union-warn-notices-2026",
+   "category": "Economy",
+   "publishedAt": "2026-11-23T12:30:00.000Z",
+   "headline": "Nine layoff notices, 1,019 jobs: the Charlotte area’s 2026 in WARN filings",
+   "dek": "Six of the nine notices filed for Mecklenburg and Union counties this year were full closures, led by Family Dollar’s 373-worker shutdown in Matthews.",
+   "paragraphs": [
+    "Employers in Mecklenburg and Union counties have filed nine WARN notices with the state so far in 2026, covering 1,019 workers, according to the N.C. Department of Commerce’s WARN list dated Nov. 11. Six of the nine were full closures rather than partial layoffs, and those six alone account for 777 jobs.",
+    "The largest was Family Dollar’s closure in Matthews, 373 workers, effective Aug. 12. Next was AmeriPark and Republic Parking System, doing business as Reimagined Parking, which closed a Charlotte operation with 188 workers on June 30. In Monroe, Down-Lite International closed with 113 workers and LTI Holdings, doing business as Boyd, closed with 63. Lions Services cut 107 jobs in Charlotte and Kenco Logistic Services cut 86.",
+    "Mecklenburg accounts for 843 of the 1,019 workers and Union for 176. Statewide, North Carolina has logged 71 notices covering 6,955 workers this year, so the two counties hold about one in seven affected workers. One notice from Lowe’s, headquartered in Mooresville, covered 49 workers in Charlotte and 178 in Mooresville, effective May 1."
+   ],
+   "whyItMatters": "The federal WARN Act generally requires larger employers to give 60 days’ notice before a plant closing or mass layoff, so these filings are often the first public record that jobs are going away. Smaller employers are not covered, so the list does not capture every job cut.",
+   "entities": [
+    {
+     "cik": 60667,
+     "name": "Lowes Companies Inc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "N.C. Department of Commerce WARN reports",
+     "url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports"
+    },
+    {
+     "label": "WARN summary list, Nov. 11, 2026 (CSV)",
+     "url": "https://files.nc.gov/commerce/2026-11/warn%20summary%20report%20111126.csv?VersionId=u2xUi_nl5S4QRbE6FdUJcMDSnyE2Lche"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "orano-federal-services-899-million-fiscal-2026",
+   "category": "Contracts",
+   "publishedAt": "2026-11-23T12:20:00.000Z",
+   "headline": "Orano Federal Services goes from $500,000 to $899.8 million in federal contracts",
+   "dek": "The contractor, which lists a Mecklenburg County address, was the second-largest recipient of federal contract money in North Carolina in fiscal 2026.",
+   "paragraphs": [
+    "In federal fiscal 2025, Orano Federal Services LLC was obligated $500,000 in federal contracts. In fiscal 2026, which ran from October 2025 through September 2026, the figure was $899.8 million, according to USAspending.gov, the federal government’s official spending database.",
+    "That made it the second-largest federal contractor with a North Carolina address, behind only Thalle Construction Co. at $1.92 billion, and by far the largest in Mecklenburg County. The next-largest Mecklenburg contractor, Chemring Sensors and Electronic Systems, received $55.8 million, up from $16.5 million. Burlington Industries went the other way, to $42.5 million from $125.9 million.",
+    "An obligation is money the government has committed to pay, not money already paid out, and one large award can move a company’s total by hundreds of millions of dollars in a single year. Orano’s USAspending recipient page lists the individual awards behind the total, including which agency is paying."
+   ],
+   "whyItMatters": "Federal contracts are one of the least visible ways money flows into the Charlotte economy. Orano’s $899.8 million is nearly three times what the next 24 Mecklenburg contractors on this site’s list received combined, and the award records show exactly what it is for.",
+   "entities": [],
+   "sources": [
+    {
+     "label": "Orano Federal Services LLC recipient profile (USAspending.gov)",
+     "url": "https://www.usaspending.gov/recipient/672134e5-1420-82f2-0227-283f296d94c6-C/latest"
+    },
+    {
+     "label": "Thalle Construction Co. recipient profile (USAspending.gov)",
+     "url": "https://www.usaspending.gov/recipient/880ef35a-f087-3ed6-ac27-9d2211947165-C/latest"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "jeld-wen-loss-narrows-equity-thin",
+   "category": "Earnings",
+   "publishedAt": "2026-11-23T12:10:00.000Z",
+   "headline": "JELD-WEN’s quarterly loss shrinks, but its equity cushion is nearly gone",
+   "dek": "The Charlotte company lost $17.2 million in the third quarter, down from $367.6 million a year earlier, after losing $621.2 million in 2025.",
+   "paragraphs": [
+    "JELD-WEN Holding Inc. lost $17.2 million in its third quarter, ended Sept. 26, a fraction of the $367.6 million it lost in the same quarter of 2025. The loss per share narrowed to 20 cents from $4.30, according to the 10-Q the Charlotte company filed with the SEC on Nov. 4. Revenue was nearly flat, down 1.4% to $798.5 million.",
+    "The smaller loss follows a rough 2025. For the full year, revenue fell 14.9% to $3.21 billion and the company lost $621.2 million. Shareholders’ equity, the gap between what a company owns and what it owes, shrank from $620.1 million at the end of 2024 to $92.2 million at the end of 2025, against $2.01 billion in liabilities.",
+    "The company has been active in SEC filings this fall. A Sept. 29 8-K reported a new material agreement, and an Oct. 19 8-K reported a change among its executives or directors."
+   ],
+   "whyItMatters": "Equity is a company’s financial cushion. When it gets thin compared with what the company owes, there is less room to absorb further losses, which is why lenders and investors watch that number closely.",
+   "entities": [
+    {
+     "cik": 1674335,
+     "name": "JELD-WEN Holding, Inc."
+    }
+   ],
+   "sources": [
+    {
+     "label": "JELD-WEN 10-Q for the quarter ended Sept. 26, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1674335/000167433526000141/jeld-20260926.htm"
+    },
+    {
+     "label": "JELD-WEN 8-K, Sept. 29, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1674335/000167433526000126/jeld-20260929.htm"
+    },
+    {
+     "label": "JELD-WEN 8-K, Oct. 19, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1674335/000167433526000129/jeld-20261013.htm"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "albemarle-swings-to-third-quarter-profit",
+   "category": "Earnings",
+   "publishedAt": "2026-11-23T12:00:00.000Z",
+   "headline": "Albemarle swings to a $296.8 million third-quarter profit after two losing years",
+   "dek": "The Charlotte chemical company earned $2.15 a share, compared with a loss of $1.72 a share in the same quarter last year.",
+   "paragraphs": [
+    "Albemarle Corp. reported net income of $296.8 million for the quarter ended Sept. 30, compared with a loss of $160.7 million a year earlier, according to the 10-Q it filed with the SEC on Nov. 4. Diluted earnings were $2.15 a share, versus a loss of $1.72.",
+    "Revenue rose 18.8% to $1.55 billion from $1.31 billion. The profitable quarter follows two years of losses: Albemarle lost $1.18 billion in 2024 and $510.6 million in 2025.",
+    "The company also filed an 8-K on Oct. 30 reporting that it had entered into one material agreement, ended another, taken on a new debt obligation and amended its charter or bylaws. It reported changes among its executives or directors in August and September."
+   ],
+   "whyItMatters": "A swing from loss to profit after two losing years is one of the clearest turns a company can show in its filings. The debt and leadership filings from the same weeks are part of the record investors read alongside it.",
+   "entities": [
+    {
+     "cik": 915913,
+     "name": "Albemarle Corp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Albemarle 10-Q for the quarter ended Sept. 30, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000129/alb-20260930.htm"
+    },
+    {
+     "label": "Albemarle 8-K, Oct. 30, 2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000124/alb-20261026.htm"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  },
+  {
+   "id": "truist-53-percent-revenue-jump-explained",
+   "category": "Earnings",
+   "publishedAt": "2026-11-23T11:50:00.000Z",
+   "headline": "Truist’s 53% revenue jump is mostly one bad year rolling off",
+   "dek": "The Charlotte bank’s 2025 revenue reached $20.32 billion, but its core lending income barely moved. The swing came from a line that was negative in 2024.",
+   "paragraphs": [
+    "On paper, Truist Financial Corp.’s revenue rose 53% in 2025, to $20.32 billion from $13.28 billion. Split a bank’s revenue into its two parts and the story changes.",
+    "Net interest income, what a bank earns on loans and securities minus what it pays on deposits and borrowing, was $14.09 billion in 2024 and $14.42 billion in 2025, up about 2.4%. Noninterest income, which covers fees and everything else, went from negative $813 million in 2024 to $5.90 billion in 2025. That one line accounts for almost the entire jump. Net income rose a more modest 9.6%, to $5.31 billion.",
+    "Banks do not report a single total revenue figure in their structured SEC data, so this site adds net interest income and noninterest income together, as the Truist company profile notes. The figures come from the company’s annual 10-K filings."
+   ],
+   "whyItMatters": "Growth rates mislead when the starting year was unusual. For one of Charlotte’s largest banks, the fair comparison is a core business that grew about 2%, not the 53% headline.",
+   "entities": [
+    {
+     "cik": 92230,
+     "name": "Truist Financial Corp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Truist Financial SEC filings index",
+     "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000092230"
+    },
+    {
+     "label": "Truist Financial structured financial data (SEC XBRL)",
+     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000092230.json"
+    }
+   ],
+   "date": "2026-11-23",
+   "model": "Claude",
+   "method": "desk"
+  }
+ ]
 }

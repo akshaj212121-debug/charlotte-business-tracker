@@ -17,6 +17,9 @@ export interface NewsItem {
   entities: { cik: number; name: string }[];
   sources: { label: string; url: string }[];
   model: string;
+  // "desk": written by hand from the site's data, with figures checked against the linked records.
+  // Absent: written by the daily pipeline (update.mjs), which inserts every figure by token.
+  method?: "desk" | "pipeline";
 }
 
 const str = (v: unknown, max: number) => typeof v === "string" && v.trim().length > 0 && v.length <= max;

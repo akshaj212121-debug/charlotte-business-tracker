@@ -44,8 +44,11 @@ export default async function NewsStoryPage({ params }: { params: Promise<{ id: 
         </ul>
       </section>
       <p className="mt-8 text-xs text-muted border-t border-rule pt-4">
-        Drafted by an AI model ({n.model}) from the public records above. Every figure is inserted from the record by
-        software, not typed by the model, and stories that break the site’s accuracy rules are discarded. Not investment advice.
+        {n.method === "desk"
+          ? <>Written by an AI model ({n.model}) from the public records above and this site’s data built from them. Every figure
+            was checked against those records before publishing. Not investment advice.</>
+          : <>Drafted by an AI model ({n.model}) from the public records above. Every figure is inserted from the record by
+            software, not typed by the model, and stories that break the site’s accuracy rules are discarded. Not investment advice.</>}
       </p>
     </article>
   );

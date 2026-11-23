@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageTitle } from "@/components/ui";
+import Signup from "@/components/Signup";
 import { getIssues } from "@/lib/issues";
 import { date } from "@/lib/format";
 
@@ -22,6 +23,7 @@ export default function IssuesPage() {
           </li>
         ))}
       </ul>
+      <div className="mt-12 max-w-3xl"><Signup /></div>
     </>
   );
 }
