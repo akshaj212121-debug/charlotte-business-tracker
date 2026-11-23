@@ -27,6 +27,7 @@ const NAV = [
   { href: "/contracts", label: "Federal contracts" },
   { href: "/layoffs", label: "Layoffs" },
   { href: "/classroom", label: "Classroom" },
+  { href: "/simulator", label: "Trading simulator" },
   { href: "/methodology", label: "Methodology" },
 ];
 
