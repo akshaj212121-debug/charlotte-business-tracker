@@ -11,7 +11,7 @@ const csp = [
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data:",
   "font-src 'self'",
-  `connect-src 'self'${isDev ? " ws:" : ""}`,
+  `connect-src 'self' https://finnhub.io${isDev ? " ws:" : ""}`, // finnhub.io: paper trading simulator quotes with a visitor's own key
   "frame-ancestors 'none'",
   "base-uri 'self'",
   `form-action 'self'${BUTTONDOWN_USERNAME ? " https://buttondown.com" : ""}`, // email signup posts to Buttondown once configured
