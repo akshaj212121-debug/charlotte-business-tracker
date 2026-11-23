@@ -11,6 +11,8 @@
   --pos: #067647;
   --neg: #b42318;
   --warn-soft: #fdf2e9;
+  --series-b: #c2410c;
+  --series-c: #6d28d9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +27,8 @@
     --pos: #4ade80;
     --neg: #f87171;
     --warn-soft: #2b1d12;
+    --series-b: #fb923c;
+    --series-c: #a78bfa;
   }
 }
 

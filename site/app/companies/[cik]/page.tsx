@@ -54,6 +54,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ cik: s
       <PageTitle kicker={[c.tickers[0], [...new Set(c.exchanges.filter(Boolean))].join(", ")].filter(Boolean).join(" · ") || "SEC registrant"} title={c.name}>
         <p>{c.industry || "Industry not classified"} · {c.city}, NC{c.county ? ` (${c.county} County)` : ""}{c.fiscalYearEnd ? ` · Fiscal year ends ${c.fiscalYearEnd.slice(0, 2)}/${c.fiscalYearEnd.slice(2)}` : ""}{c.filerCategory ? ` · ${c.filerCategory}` : ""}</p>
         {c.formerNames.length > 0 && <p className="text-sm mt-1">Formerly: {c.formerNames.slice(0, 3).join("; ")}</p>}
+        {c.years.length >= 2 && <p className="text-sm mt-2"><a href={`/models?a=${c.tickers[0] ?? c.cik}&b=none&model=dcf`} className="text-accent underline">Run valuation models on {c.name} →</a></p>}
       </PageTitle>
 
       {sentence && <p className="text-lg leading-relaxed max-w-3xl -mt-2 mb-8">{sentence}</p>}
