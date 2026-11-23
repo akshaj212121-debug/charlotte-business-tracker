@@ -23,6 +23,7 @@ const NAV = [
   { href: "/region", label: "Counties & towns" },
   { href: "/companies", label: "Public companies" },
   { href: "/earnings", label: "Earnings" },
+  { href: "/models", label: "Stock models" },
   { href: "/nonprofits", label: "Nonprofits" },
   { href: "/contracts", label: "Federal contracts" },
   { href: "/layoffs", label: "Layoffs" },
